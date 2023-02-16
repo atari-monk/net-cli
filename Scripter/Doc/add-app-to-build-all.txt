@@ -1,0 +1,15 @@
+1. Open 5 files
+
+-data file with app that has base CodeData
+-CodeDataSet
+-CodeDataDictionarySet
+-AllAppsList
+-BuildAllScriptTests
+
+2. Add app to last 4 files
+
+3. build and test for red
+
+4. fix test by finding spot where it added app line and correct it
+
+5. build and test for green

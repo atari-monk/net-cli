@@ -1,0 +1,11 @@
+1. json to html generator.
+2. automating cli app.
+3. Notes page html template. Named tutorial template.
+4. Add html page template NotesPageTemplate.html from tech wiki, to code generator of this page.
+5. Set generator paths to file data storage in apps-data repo.
+6. Every lib operation has its cli app command.
+7. TODO: Remove Nr field for tutorial generator 2, without loosing copy feature (add id).
+8. TODO: Improve tabs in tutorial generator 2.
+9. TODO: Migrate data from tutorial generator to tutorial generator 2.
+10. TODO: Add title field to tutorial generator 2.
+11. TODO: Add to tutorial generator 2 cli cmd to copy tutorials data from storage to tech wiki.

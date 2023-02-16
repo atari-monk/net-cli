@@ -1,0 +1,31 @@
+<!-- 
+    Gets all my repos names from github api
+    for json keys just open "https://api.github.com/users/atari-monk/repos?per_page=100" in browser 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $.getJSON("https://api.github.com/users/atari-monk/repos?per_page=100", function (json) {
+            var resp = '';
+            $.each(json, function (index, value) {
+                resp = resp + '"' + value['name'] + '"' + '\r\n';
+                //console.log(resp);
+                var p = document.getElementById('text');
+                p.innerText = resp;
+            });
+        });
+    </script>
+    <p id="text"></p>
+</head>
+
+<body>
+
+</body>
+
+</html>

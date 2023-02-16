@@ -1,0 +1,157 @@
+<li>
+    <p>
+        Create new github repo
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Open folder with VSCode
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Setup project.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            dotnet new sln
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            dotnet new classlib -n Connection.Builder
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            dotnet sln add ./Connection.Builder/
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        In csproj file set properties describing nuget
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">Id name, unique in nuget.org</mark></p>
+            <p><mark class="mark-name">version</mark></p>
+            <p><mark class="mark-name">author</mark></p>
+            <p><mark class="mark-name">company name</mark></p>
+            <p><mark class="mark-name">tags important for searching nuget</mark></p>
+            <p><mark class="mark-name">description</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            &lt;PackageId&gt;<mark class="mark-name">Connection.Builder.15.11.2022.001.Test</mark>&lt;/PackageId&gt;&lt;br&gt;&lt;Version&gt;<mark class="mark-name">1.0.0</mark>&lt;/Version&gt;&lt;br&gt;&lt;Authors&gt;<mark class="mark-name">atari-monk</mark>&lt;/Authors&gt;&lt;br&gt;&lt;Company&gt;<mark class="mark-name"></mark>&lt;/Company&gt;&lt;br&gt;&lt;PackageTags&gt;<mark class="mark-name">tag1;tag2</mark>&lt;/PackageTags&gt;&lt;br&gt;&lt;Description&gt;<mark class="mark-name">Builds ConnectionString.</mark>&lt;/Description&gt;
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Build
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            dotnet build
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Produce nuget file with dotnet cli.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">cd folder with csproj file</mark></p>
+            <p><mark class="">clear your local packages cache (try to use below, this one takes ages to restore after)</mark></p>
+            <p><mark class="">clear your local packages cache</mark></p>
+            <p><mark class="mark-name">build path</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            cd C:\atari-monk\Code\connection-builder\Connection.Builder
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            dotnet nuget locals all --clear
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            dotnet nuget locals temp -c
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            dotnet nuget locals global-packages -c
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code10')"></button>
+        <code id='code10'>
+            dotnet restore
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code11')"></button>
+        <code id='code11'>
+            dotnet pack -c Release -o <mark class="mark-name">C:\atari-monk\Build\nugets</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        In target csproj file, add local nuget source. (also nuget.org)
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code12')"></button>
+        <code id='code12'>
+            &lt;RestoreSources&gt;$(RestoreSources);C:\atari-monk\Build\nugets;https://api.nuget.org/v3/index.json&lt;/RestoreSources&gt;
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Consume nuget in target project.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">PackageId</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code13')"></button>
+        <code id='code13'>
+            cd C:\atari-monk\Code\repo\proj
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code14')"></button>
+        <code id='code14'>
+            dotnet add package <mark class="mark-name">Connection.Builder.19.11.2022</mark>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code15')"></button>
+        <code id='code15'>
+            dotnet restore
+        </code>
+        <br>
+    </p>
+</li>

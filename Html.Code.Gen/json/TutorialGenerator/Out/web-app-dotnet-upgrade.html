@@ -1,0 +1,229 @@
+<li>
+    <p>
+        Open Code powershell (shell set on folder Code)
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Clone example repo. This web app is net6. Updgrade to net7
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            git clone https://github.com/Azure-Samples/msdocs-app-service-sqldb-dotnetcore.git
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            cd msdocs-app-service-sqldb-dotnetcore
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create new repo on github. Named todo-web-app. Clone it.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Check dotnet version. Install dotnet 7.0. <a href="https://dotnet.microsoft.com/en-us/download/dotnet/7.0">Dotnet 7 download page</a>
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            dotnet --version
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create net7, new mvc web app in VSCode. Test run it. Commit it.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            dotnet new mvc -n todo-web-app
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Copy files of example app. Change namespace. Refactor names.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Copy Todo model file.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        To raname project change folder and csproj name also change RootNamespace is csproj.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add sln file.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            dotnet new sln
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Add proj to sln.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            dotnet sln add .\TodoWebApp\
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Copy dbContext file and add Microsoft.EntityFrameworkCore.SqlServer PackageReference to csproj.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add contorller. Handle null warnings. (even temporary fix)
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Map to new contorller as default in program.cs app.MapControllerRoute...
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Copy views folder. Rename namespaces. Commit.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add ConnectionString named LocalDbConnection to appsettings.json. <a href="https://learn.microsoft.com/en-us/ef/core/miscellaneous/connection-strings">Connection Strings</a>
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add ef core dbContext to program.cs web app setup. builder.Services.AddDbContext...
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        From a local terminal applay migrations. To create local db for tests. <a href="https://www.nuget.org/">nuget</a>. 
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">you need to be in project with migrations folder</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">if needed, dont use version for latest</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">run migrations on db</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            cd TodoWebApp
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            dotnet tool install -g dotnet-ef
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            dotnet tool update -g dotnet-ef
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code10')"></button>
+        <code id='code10'>
+            dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.0
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code11')"></button>
+        <code id='code11'>
+            dotnet ef migrations add InitialCreate
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code12')"></button>
+        <code id='code12'>
+            dotnet ef database update
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Mismach in ef core nugets versions, for example Microsoft.EntityFrameworkCore.SqlServer and Microsoft.EntityFrameworkCore.Design<br>can give exceptions due to misiing implementations. Version="7.0.0", Version="6.0.0", did.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        .vscode json contain scripts to lunch app. If app was renamed. You need to edit theese files.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Test web app localy with the browser in debug mode.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add azure diagnostics logging nuget. Add builder.Logging.AddAzureWebAppDiagnostics(); in program.cs. Build. Commit.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">dont use version for latest</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code13')"></button>
+        <code id='code13'>
+            dotnet add package Microsoft.Extensions.Logging.AzureAppServices --version 7.0.0
+        </code>
+        <br>
+    </p>
+</li>

@@ -1,0 +1,425 @@
+[
+    {
+        "Title": "Open Code powershell (shell set on folder Code)"
+    },
+    {
+        "Title": "Clone example repo. (Prerequisite)",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "git clone https:\/\/github.com\/Azure-Samples\/msdocs-app-service-sqldb-dotnetcore.git"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "cd msdocs-app-service-sqldb-dotnetcore"
+            }
+        ]
+    },
+    {
+        "Title": "Create new repo on github. Named todo-web-app. Copy project there and commit. (Prerequisite)"
+    },
+    {
+        "Title": "Login to Azure CLI",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "az login"
+            }
+        ]
+    },
+    {
+        "Title": "Create resource group for to-do-app project.",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "az group create --name {0} --location {1} --tags {2}",
+                "CodeParams": [
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "swedencentral",
+                        "Desc": "location",
+                        "CssClass": "mark-location"
+                    },
+                    {
+                        "Name": "todo-web-app resource group",
+                        "Desc": "description tag",
+                        "CssClass": "mark-tag"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Create resource group App Service plans.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "az group create --name {0} --location {1} --tags {2}",
+                "CodeParams": [
+                    {
+                        "Name": "atari-monk-appservice-plans-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "swedencentral",
+                        "Desc": "location",
+                        "CssClass": "mark-location"
+                    },
+                    {
+                        "Name": "appservice-plans resource group",
+                        "Desc": "description tag",
+                        "CssClass": "mark-tag"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Create an App Service plan.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "az appservice plan create --name {0} --resource-group {1} --is-linux --sku {2}",
+                "CodeParams": [
+                    {
+                        "Name": "atari-monk-appservice-plan1",
+                        "Desc": "App Service plan name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "atari-monk-appservice-plans-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "F1",
+                        "Desc": "Free az plan tier",
+                        "CssClass": "mark-option"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "See available runtimes for your app. To choose one. (optional)",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "az webapp list-runtimes --os linux --output table",
+                "CodeParams": [
+                    {
+                        "Desc": "for Linux",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            },
+            {
+                "Nr": 8,
+                "CodeFormat": "az webapp list-runtimes --os windows --output table",
+                "CodeParams": [
+                    {
+                        "Desc": "for Windows",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Create the App Service web app.",
+        "Codes": [
+            {
+                "Nr": 9,
+                "CodeFormat": "az webapp create --name {0} --runtime \"{1}\" --plan {2} --resource-group {3}",
+                "CodeParams": [
+                    {
+                        "Name": "atari-monk-todo-web-app",
+                        "Desc": "Generates domain name https://<app service name>.azurewebsites.com (needs to be unique in azuzre)",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "DOTNETCORE:7.0",
+                        "Desc": "runtime",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "atari-monk-appservice-plan1",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Create an Azure SQL Server to host the database<br>This was done in tutorial <a href=\"./azure-sql-db.html\">Azure SQL Database</a>"
+    },
+    {
+        "Title": "Create db on server.",
+        "Codes": [
+            {
+                "Nr": 10,
+                "CodeFormat": "az sql db create --resource-group {0} --server {1} --name {2}",
+                "CodeParams": [
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "rg of sql server",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "atari-monk-sql-server1",
+                        "Desc": "az sql server name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "coreDb",
+                        "Desc": "name of db",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Connect the App to the Database.<br>When prompted, provide the login and password you used when creating azure sql server!.<br>(Chars of password are not visible at all, but paste works)<br>Copy this connection string value from the output for later.",
+        "Codes": [
+            {
+                "Nr": 11,
+                "CodeFormat": "az webapp connection create sql --resource-group {0} --name {1} --target-resource-group {2} --server {3} --database {4} --client-type {5} --connection {6} --query {7}",
+                "CodeParams": [
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "rg witch contains the web app",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "atari-monk-todo-web-app",
+                        "Desc": "web app name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "rg witch contains the sql server",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "atari-monk-sql-server1",
+                        "Desc": "server already created in az",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "coreDb",
+                        "Desc": "name of db",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "dotnet",
+                        "Desc": "client type",
+                        "CssClass": "mark-option"
+                    },
+                    {
+                        "Name": "sql_e73o5",
+                        "Desc": "connection name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "configurations",
+                        "Desc": "removing --query param will show more logs",
+                        "CssClass": "mark-option"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Set up a firewall rule on the SQL database server.<br>This was done in tutorial <a href=\"./azure-sql-db.html\">Azure SQL Database</a>"
+    },
+    {
+        "Title": "Update the appsettings.json of app, with generated connection string.",
+        "Codes": [
+            {
+                "Nr": 12,
+                "CodeFormat": "\"AZURE_SQL_CONNECTIONSTRING\": \"Data Source=<your-server-name>.database.windows.net,1433;Initial Catalog=coreDb;User ID=<username>;Password=<password>\"",
+                "CodeParams": [
+                    {
+                        "Desc": "Example connextion string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Update app setup in program.cs (older apps may have it in Startup.cs)",
+        "Codes": [
+            {
+                "Nr": 13,
+                "CodeFormat": "services.AddDbContext<MyDatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString(\"AZURE_SQL_CONNECTIONSTRING\")));",
+                "CodeParams": [
+                    {
+                        "Desc": "set connection string name to use with ef core context and sql server"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "From a local terminal applay migrations.",
+        "Codes": [
+            {
+                "Nr": 14,
+                "CodeFormat": "cd DotNetCoreSqlDb",
+                "CodeParams": [
+                    {
+                        "Desc": "you need to be in project with migrations folder"
+                    }
+                ]
+            },
+            {
+                "Nr": 15,
+                "CodeFormat": "dotnet tool install -g dotnet-ef",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 16,
+                "CodeFormat": "dotnet tool update -g dotnet-ef",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 17,
+                "CodeFormat": "dotnet ef migrations add InitialCreate",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 18,
+                "CodeFormat": "dotnet ef database update",
+                "CodeParams": [
+                    {
+                        "Desc": "run migrations on db"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "error Client with IP address xxx.xxx.xxx.xxx is not allowed to access the server<br>means your Azure firewall rule is incorrect<br>use ip from error to update it."
+    },
+    {
+        "Title": "Deploy to the App Service with VS Code<br>Install Azure Account and Azure App Service extensions<br>Login with Account extension<br>",
+        "Codes": [
+            {
+                "Nr": 19,
+                "CodeFormat": "dotnet publish -c Release",
+                "CodeParams": [
+                    {
+                        "Desc": "deployable publish folder for the app in the bin/release/publish directory"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Right-click on publish folder and select Deploy to Web App."
+    },
+    {
+        "Title": "Test web app in the browser.<br>In Azure Portal, Browse link at the top of the App Service overview page"
+    },
+    {
+        "Title": "Use Kudu tool to get info on deployment.",
+        "Codes": [
+            {
+                "Nr": 20,
+                "CodeFormat": "https://<app-name>.scm.azurewebsites.net",
+                "CodeParams": [
+                    {
+                        "Desc": "For apps deployed in Free, Shared, Basic, Standard, and Premium App Service plans"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Configure and Stream Application Logs.<br>To filesystem or console.",
+        "Codes": [
+            {
+                "Nr": 21,
+                "CodeFormat": "az webapp log config --web-server-logging 'filesystem' --name {0} --resource-group {1}",
+                "CodeParams": [
+                    {
+                        "Name": "todo-web-app",
+                        "Desc": "web app service name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            },
+            {
+                "Nr": 22,
+                "CodeFormat": "az webapp log tail --name {0} --resource-group {1}",
+                "CodeParams": [
+                    {
+                        "Name": "todo-web-app",
+                        "Desc": "web app service name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Clean up resources. App rg and plan rg.",
+        "Codes": [
+            {
+                "Nr": 23,
+                "CodeFormat": "az group delete --name {0}",
+                "CodeParams": [
+                    {
+                        "Name": "todo-web-app-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            },
+            {
+                "Nr": 24,
+                "CodeFormat": "az group delete --name {0}",
+                "CodeParams": [
+                    {
+                        "Name": "atari-monk-appservice-plans-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            }
+        ]
+    }
+]

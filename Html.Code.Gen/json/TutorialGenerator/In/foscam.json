@@ -1,0 +1,29 @@
+[
+  {
+    "Title": "Acces router with browser",
+    "Codes": [
+      {
+        "Nr": 1,
+        "CodeFormat": "http://192.168.0.1 or 192.168.0.1"
+      }
+    ]
+  },
+  {
+    "Title": "Ip of camera in lan (only laptop and cam was connected)",
+    "Codes": [
+      {
+        "Nr": 2,
+        "CodeFormat": "http://192.168.0.101"
+      }
+    ]
+  },
+  {
+    "Title": "Ip of camera forwarded to internet",
+    "Codes": [
+      {
+        "Nr": 3,
+        "CodeFormat": "http://93.180.187.115:888/"
+      }
+    ]
+  }
+]

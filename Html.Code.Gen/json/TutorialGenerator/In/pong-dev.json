@@ -1,0 +1,425 @@
+[
+  {
+    "Title": "Coding Session 10.12.2022.<br>Return after weeks.<br>Fixin stuff after introduction of second canvas for text.",
+    "Codes": [
+      {
+        "Nr": 1,
+        "CodeFormat": "Bugs in main Game (bad name SecondPlayer).<br>Wrong canvas id.<br>Move score to text Canvas.<br>Text canvas didnt clean old paint.<br>Move player scores to player sides (left, right) and change color to match player."
+      },
+      {
+        "Nr": 2,
+        "CodeFormat": "In Wall Collision Test.<br>Add text canvas to Game ctor. A mistake. Removed."
+      },
+      {
+        "Nr": 3,
+        "CodeFormat": "In Player Test. Separation of Game, GameInfo and their factories.<br>Later this turned out to be not needed, a mistake."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 11.12.2022.<br>Fixin stuff after introduction of second canvas for text.",
+    "Codes": [
+      {
+        "Nr": 4,
+        "CodeFormat": "Remove text canvas from Game class."
+      },
+      {
+        "Nr": 5,
+        "CodeFormat": "In Collision Left Test.<br>Separete class CollisionLeftTestInfoFactory.<br>Probably not needed mistake."
+      },
+      {
+        "Nr": 6,
+        "CodeFormat": "In Wall Collision Test.<br>Fix Game ctor."
+      },
+      {
+        "Nr": 7,
+        "CodeFormat": "In Player Test.<br>Fix Game ctor.<br>Move text to text canvas.<br>Update PlayerPrinter by moving description method to player class.<br>Facepalm, all printer classes are prolly to be removed as useless becouse these where game classes methods to begin with."
+      },
+      {
+        "Nr": 8,
+        "CodeFormat": "In Wall Collision Test.<br>Create Ball description method in ball instead in BallPrinter.<br>Seperate layer for this was a mistake at this point."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 17.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 9,
+        "CodeFormat": "Refactor Wall Collision Test to test each wall separately.<br>Refactor this test and it's all parts, to simplify where possible."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 18.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 10,
+        "CodeFormat": "Fix bugs in Player Test. Print player info in text canvas."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 26.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 11,
+        "CodeFormat": "Add ScreenSize class, refactor wall and player tests to use it. Resize smaller for phone."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 28.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 12,
+        "CodeFormat": "Refactor my ball collision left test."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 28.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 13,
+        "CodeFormat": "Refactor my ball collision right test."
+      },
+      {
+        "Nr": 14,
+        "CodeFormat": "Refactor rect collision test."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 29.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 15,
+        "CodeFormat": "Rename test files. Refactor slider."
+      },
+      {
+        "Nr": 16,
+        "CodeFormat": "Refactor direction."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 30.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 17,
+        "CodeFormat": "Fix coll proto."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 31.12.2022.<br>Try to stop the chaos.",
+    "Codes": [
+      {
+        "Nr": 18,
+        "CodeFormat": "Refactor direction."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 01.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 19,
+        "CodeFormat": "Add rotation formula to direction (translate axis to (0,0) than to (x,y))."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 02.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 20,
+        "CodeFormat": "Add Entity - base class to Player and Ball."
+      },
+      {
+        "Nr": 21,
+        "CodeFormat": "Add Ball instead of player to direction proto."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 03.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 22,
+        "CodeFormat": "Add ball render to direction.<br>Added EntityV2 with multiple renders (using inheritance).<br>Added BallV2."
+      },
+      {
+        "Nr": 23,
+        "CodeFormat": "EntityV3, BallV3 with renderers composition instead of inheritance. (Separete renders for graphics and text)"
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 04.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 24,
+        "CodeFormat": "Fix renders in direction proto. Fix ballV3 bug."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 05.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 25,
+        "CodeFormat": "Experiment with direction. ToDo: Create direction class, separete from Ball. To observe ball trajectory compared with it, also to be independant drom ball."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 06.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 26,
+        "CodeFormat": "Added Bearing class. Ball speed directed in direction of bearing vector. Ball has proper start in direction prototype. It starts toward left or right player, in such a direction as to score point."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 07.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 27,
+        "CodeFormat": "Ball direction is developed in direction prototype. Move it to the Game."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 08.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 28,
+        "CodeFormat": "Fix 0 angle case by makeing angle a litle bigger than 0. Add ball reset. Add reset to Direction, after Start click, reset when ball is off screen."
+      },
+      {
+        "Nr": 29,
+        "CodeFormat": "New gui for laptop version."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 09.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 30,
+        "CodeFormat": "Improve gui/text. Added overlay to read mouse coordinates. Improved points look."
+      },
+      {
+        "Nr": 31,
+        "CodeFormat": "TODO: Add Time class."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 10.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 32,
+        "CodeFormat": "Improve text. Refactored text drawing in pong only, broken everywhere else."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 11.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 33,
+        "CodeFormat": "Add points canvas. Add class to handle canvases easier."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 12.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 34,
+        "CodeFormat": "Fix scaling beetween diffrent screens. Fix canvas layout for Left Wall test."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 14.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 35,
+        "CodeFormat": "Add project plan. Plan content are: User Stories, Features, Flowchart, Architecture, this log."
+      },
+      {
+        "Nr": 36,
+        "CodeFormat": "Add start button, add reset button, reset player and ball."
+      },
+      {
+        "Nr": 37,
+        "CodeFormat": "ToDo: Reset points."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 15.01.2023.<br>Try to be productive.",
+    "Codes": [
+      {
+        "Nr": 38,
+        "CodeFormat": "Reset points. Refactor points (prolly will be removed by state pattern but it's so pretty now). Fix Reset button game behavior."
+      },
+      {
+        "Nr": 39,
+        "CodeFormat": "Add Mouse input class. Only coord for now."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 16.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 40,
+        "CodeFormat": "Steer player with mouse in test."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 17.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 41,
+        "CodeFormat": "Steer player with mouse in game."
+      },
+      {
+        "Nr": 42,
+        "CodeFormat": "Add btns styling. Try to add menu section (weird layout). Add class to handle menu."
+      },
+      {
+        "Nr": 43,
+        "CodeFormat": "TODO: Consolidate Player tests to one (mouse, keyboard sets control selection)."
+      },
+      {
+        "Nr": 44,
+        "CodeFormat": "TODO: Steer player with second key set, in game."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 18.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 45,
+        "CodeFormat": "Try to fix player view as fast as possible. Merged player keyboard and mouse tests to one page."
+      },
+      {
+        "Nr": 46,
+        "CodeFormat": "Failed to fix github pages deployment. Relative link dont work. TODO: try sln with jenkins on left view."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 19.01.2023.<br>Try to grow. Full day on it concept.",
+    "Codes": [
+      {
+        "Nr": 47,
+        "CodeFormat": "Fixed github pages deployment by using js dynamic import feature. Fixed for Left."
+      },
+      {
+        "Nr": 48,
+        "CodeFormat": "Hide menu by default, show when needed."
+      },
+      {
+        "Nr": 49,
+        "CodeFormat": "Fix ugly printouts."
+      },
+      {
+        "Nr": 50,
+        "CodeFormat": "Investigate merge of left and right wall test. Upgrade right to same standard as left first. <br> Using setTimeout as promise, chain left and right test in time. Fixed timer so it wont take delta spikes that are created when <br> canceling animation frames and restarting it. Even made it reapet with setInterval."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 21.01.2023.<br>Try to grow. Full day on it concept.",
+    "Codes": [
+      {
+        "Nr": 51,
+        "CodeFormat": "I learned of bundling so my dynamic import solution is obsolete probably. Try to use modern tools to deploy in seperate repo. Bundling files should remove relative links that are not allowed on github pages. Failed due to dynamic scripts used in pong html."
+      },
+      {
+        "Nr": 52,
+        "CodeFormat": "Created github branch dynamic-scripts witch will store current pong site state. It has dynamic scripts."
+      },
+      {
+        "Nr": 53,
+        "CodeFormat": "On main branch, change solution structure. I mean, remove dynamic sripts and provide static links. So that npm and parcel has chance to work. Prepare page that can be independently run (static links)."
+      },
+      {
+        "Nr": 54,
+        "CodeFormat": "Change main page to static links (css, js) to subpages. Change subpages to static links (css, js). <br> First, create set of links that will work locally."
+      },
+      {
+        "Nr": 55,
+        "CodeFormat": "Change all subpages to static links (css, js). Update main page accordinglly."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 23.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 56,
+        "CodeFormat": "Add top and bottom wall test to walls test. Refactor. Rename files."
+      },
+      {
+        "Nr": 57,
+        "CodeFormat": "Fix collision test."
+      },
+      {
+        "Nr": 58,
+        "CodeFormat": "Add left and right to my collision test."
+      },
+      {
+        "Nr": 59,
+        "CodeFormat": "Fix slider."
+      },
+      {
+        "Nr": 60,
+        "CodeFormat": "Fix direction."
+      },
+      {
+        "Nr": 61,
+        "CodeFormat": "Fix Wall Collision."
+      },
+      {
+        "Nr": 62,
+        "CodeFormat": "Fix My Collision."
+      },
+      {
+        "Nr": 63,
+        "CodeFormat": "Fix Arkanoid."
+      },
+      {
+        "Nr": 64,
+        "CodeFormat": "Fix Game."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 25.01.2023.<br>Try to grow.",
+    "Codes": [
+      {
+        "Nr": 65,
+        "CodeFormat": "Remove laptop version and make just one pong game version."
+      },
+      {
+        "Nr": 66,
+        "CodeFormat": "Add npm config, parcel, make web project folder structure, fix name convention, build project, add new repo with github pages, fix github links."
+      },
+      {
+        "Nr": 67,
+        "CodeFormat": "TODO: problems with pollyfilling."
+      }
+    ]
+  }
+]

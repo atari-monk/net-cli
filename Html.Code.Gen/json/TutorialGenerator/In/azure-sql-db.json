@@ -1,0 +1,150 @@
+[
+    {
+        "Title": "Run PowerShell in chosen root folder."
+    },
+    {
+        "Title": "Check Azure CLI version. <a href=\"https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli\">Azure CLI current msi</a>",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "az version"
+            }
+        ]
+    },
+    {
+        "Title": "Update Azure CLI. (if needed)",
+        "Codes": [
+            {
+                "Nr": 2,
+                "CodeFormat": "az upgrade"
+            }
+        ]
+    },
+    {
+        "Title": "During Azure CLI MSI install, phyton needed to be killed. (if needed)",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "taskkill /im python.exe /F"
+            }
+        ]
+    },
+    {
+        "Title": "Sign in to the Azure CLI.",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "az login"
+            }
+        ]
+    },
+    {
+        "Title": "Create resource group for this project.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "az group create --name {0} --location {1} --tags {2}",
+                "CodeParams": [
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "swedencentral",
+                        "Desc": "location",
+                        "CssClass": "mark-location"
+                    },
+                    {
+                        "Name": "create-and-configure-database",
+                        "Desc": "description tag",
+                        "CssClass": "mark-tag"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Create a server.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "az sql server create --name {0} --resource-group {1} --location {2} --admin-user {3} --admin-password {4}",
+                "CodeParams": [
+                    {
+                        "Name": "atari-monk-sql-server1",
+                        "Desc": "server name (unique in azure)",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "swedencentral",
+                        "Desc": "location",
+                        "CssClass": "mark-location"
+                    },
+                    {
+                        "Name": "atari-monk",
+                        "Desc": "server login",
+                        "CssClass": "mark-login"
+                    },
+                    {
+                        "Name": "password",
+                        "Desc": "server password",
+                        "CssClass": "mark-password"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Configure a server-based firewall rule.",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "az sql server firewall-rule create --resource-group {0} --server {1} -n AllowYourIp --start-ip-address {2} --end-ip-address {3}",
+                "CodeParams": [
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    },
+                    {
+                        "Name": "atari-monk-sql-server1",
+                        "Desc": "server name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "ip",
+                        "Desc": "public ip of your admin pc",
+                        "CssClass": "mark-ip"
+                    },
+                    {
+                        "Name": "ip",
+                        "Desc": "public ip of your admin pc",
+                        "CssClass": "mark-ip"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Deleting resources, server and dbs, after they are not needed.",
+        "Codes": [
+            {
+                "Nr": 8,
+                "CodeFormat": "az group delete --name {0}",
+                "CodeParams": [
+                    {
+                        "Name": "az-sql-db1-rg",
+                        "Desc": "resource group",
+                        "CssClass": "mark-rg"
+                    }
+                ]
+            }
+        ]
+    }
+]

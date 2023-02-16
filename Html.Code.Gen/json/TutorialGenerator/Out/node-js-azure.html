@@ -1,0 +1,175 @@
+<li>
+    <p>
+        Create new github repo, open git bash in Code folder, clone it.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            git clone https://github.com/atari-monk/web-dev-basics.git
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Verify that Node.js is installed.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            node --version
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create a Node.js application using the Express Generator.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">repo folder</mark></p>
+            <p><mark class="mark-name">app name</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            cd <mark class="mark-name">web-dev-basics</mark> && npx express-generator <mark class="mark-name">myExpressApp</mark> --view ejs
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Install the NPM packages to the app.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">app name</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            cd <mark class="mark-name">myExpressApp</mark> && npm install
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Start the development server with debug information.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">app name</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            DEBUG=<mark class="mark-name">myExpressApp</mark>:* npm start
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Test in the browser.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            http://localhost:3000
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Deploy to cloud using VSCode Azure extension.<br>Sign in. Azure email should be in status bar and subscription in explorer.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Right-click on App Services, Create new Web App. A Linux container is used by default.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Name unique in Azure ('A-Z', 'a-z', '0-9', '-').
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">example name</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            atari-monk-myExpressApp
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Select Node runtime stack and Node.js latest LTS (long term support) version.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Select pricing tier Free (F1).
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        All options are in right click menu of App Services in explorer.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Error - Couldn't detect a version for the platform 'nodejs' in the repo.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        In .vscode/settings.json paste (for Azure extension to deploy without above error)
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">app repo name</mark></p>
+            <p><mark class="mark-name">app proj folder</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            "appService.defaultWebAppToDeploy": "<mark class="mark-name">web-dev-basics</mark>"
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            "appService.deploySubpath": "<mark class="mark-name">myExpressApp</mark>"
+        </code>
+        <br>
+    </p>
+</li>

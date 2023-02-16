@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RestoreSources>$(RestoreSources);C:\atari-monk\nugets;https://api.nuget.org/v3/index.json</RestoreSources>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="EFCore.Helper" Version="1.0.0"/>
+		<PackageReference Include="CLIHelper" Version="1.0.0"/>
+		<PackageReference Include="CLIReader" Version="1.0.0"/>
+		<PackageReference Include="CRUDCommandHelper" Version="1.0.0"/>
+		<PackageReference Include="CLIWizardHelper" Version="1.0.0"/>
+		<PackageReference Include="CLIFramework" Version="1.0.0"/>
+		<PackageReference Include="Unity.Abstractions" Version="5.11.7"/>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\GameData.Data.Lib\GameData.Data.Lib.csproj"/>
+	</ItemGroup>
+
+</Project>

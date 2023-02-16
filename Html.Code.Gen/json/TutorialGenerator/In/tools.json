@@ -1,0 +1,76 @@
+[
+    {
+        "Title": "Tools for Html",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "<a href=\"https://www.freeformatter.com/html-escape.html\">escape html</a>",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Keys for VSCode",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "Ctrl+D",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "Multi cursor: select name, use keys to select it's multiple occurences after selection to get multi cursor on them.",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

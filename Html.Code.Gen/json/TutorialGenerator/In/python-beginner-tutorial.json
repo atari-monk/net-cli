@@ -1,0 +1,306 @@
+[
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample1.py'>sample1</a>",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "vars"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "dict"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "input"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "lists"
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": "random"
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": "args"
+            },
+            {
+                "Nr": 7,
+                "CodeFormat": "if"
+            },
+            {
+                "Nr": 8,
+                "CodeFormat": "concatenation"
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "string interpolation"
+            },
+            {
+                "Nr": 10,
+                "CodeFormat": "if else"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample2.py'>sample2</a>",
+        "Codes": [
+            {
+                "Nr": 11,
+                "CodeFormat": "elif"
+            },
+            {
+                "Nr": 12,
+                "CodeFormat": "nesting if"
+            },
+            {
+                "Nr": 13,
+                "CodeFormat": "dict value"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample3_rock_paper_scissors.py'>sample3, rock paper scissors</a>",
+        "Codes": [
+            {
+                "Nr": 14,
+                "CodeFormat": "rock, paper, scissors"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample4.py'>sample4</a>",
+        "Codes": [
+            {
+                "Nr": 15,
+                "CodeFormat": "vars"
+            },
+            {
+                "Nr": 16,
+                "CodeFormat": "expressions"
+            },
+            {
+                "Nr": 17,
+                "CodeFormat": "statements"
+            },
+            {
+                "Nr": 18,
+                "CodeFormat": "data types"
+            },
+            {
+                "Nr": 19,
+                "CodeFormat": "arithmic operators"
+            },
+            {
+                "Nr": 20,
+                "CodeFormat": "comparison operators"
+            },
+            {
+                "Nr": 21,
+                "CodeFormat": "boolean operators"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample5.py'>sample5</a>",
+        "Codes": [
+            {
+                "Nr": 22,
+                "CodeFormat": "strings"
+            },
+            {
+                "Nr": 23,
+                "CodeFormat": "strings characters & slicing"
+            },
+            {
+                "Nr": 24,
+                "CodeFormat": "bools"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample6.py'>sample6</a>",
+        "Codes": [
+            {
+                "Nr": 25,
+                "CodeFormat": "number data types"
+            },
+            {
+                "Nr": 26,
+                "CodeFormat": "build in number functions"
+            },
+            {
+                "Nr": 27,
+                "CodeFormat": "enums"
+            },
+            {
+                "Nr": 28,
+                "CodeFormat": "input"
+            },
+            {
+                "Nr": 29,
+                "CodeFormat": "control statements"
+            },
+            {
+                "Nr": 30,
+                "CodeFormat": "lists"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample7.py'>sample7</a>",
+        "Codes": [
+            {
+                "Nr": 31,
+                "CodeFormat": "sorting lists"
+            },
+            {
+                "Nr": 32,
+                "CodeFormat": "tuples"
+            },
+            {
+                "Nr": 33,
+                "CodeFormat": "dictionaries"
+            },
+            {
+                "Nr": 34,
+                "CodeFormat": "sets"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample8.py'>sample8</a>",
+        "Codes": [
+            {
+                "Nr": 35,
+                "CodeFormat": "functions"
+            },
+            {
+                "Nr": 36,
+                "CodeFormat": "nested functions"
+            },
+            {
+                "Nr": 37,
+                "CodeFormat": "closures in functions"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample9.py'>sample9</a>",
+        "Codes": [
+            {
+                "Nr": 38,
+                "CodeFormat": "objects"
+            },
+            {
+                "Nr": 39,
+                "CodeFormat": "loops"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample10.py'>sample10</a>",
+        "Codes": [
+            {
+                "Nr": 40,
+                "CodeFormat": "classes"
+            },
+            {
+                "Nr": 41,
+                "CodeFormat": "modules"
+            },
+            {
+                "Nr": 42,
+                "CodeFormat": "cli agrs"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample11.py'>sample11</a>",
+        "Codes": [
+            {
+                "Nr": 43,
+                "CodeFormat": "lambda functions"
+            },
+            {
+                "Nr": 44,
+                "CodeFormat": "map(), filter(), reduce()"
+            },
+            {
+                "Nr": 45,
+                "CodeFormat": "recursion"
+            },
+            {
+                "Nr": 46,
+                "CodeFormat": "decorators"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample12.py'>sample12</a>",
+        "Codes": [
+            {
+                "Nr": 47,
+                "CodeFormat": "docstring"
+            },
+            {
+                "Nr": 48,
+                "CodeFormat": "annotations"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample13.py'>sample13</a>",
+        "Codes": [
+            {
+                "Nr": 49,
+                "CodeFormat": "exceptions"
+            },
+            {
+                "Nr": 50,
+                "CodeFormat": "with"
+            },
+            {
+                "Nr": 51,
+                "CodeFormat": "pip - cli for packages"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample14.py'>sample14</a>",
+        "Codes": [
+            {
+                "Nr": 52,
+                "CodeFormat": "list compressions"
+            },
+            {
+                "Nr": 53,
+                "CodeFormat": "polymorphism (needs upg ?)"
+            },
+            {
+                "Nr": 54,
+                "CodeFormat": "operator overloading"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample15.py'>sample15</a>",
+        "Codes": [
+            {
+                "Nr": 55,
+                "CodeFormat": "code that leaded to sample16"
+            }
+        ]
+    },
+    {
+        "Title": "<a href='https://github.com/atari-monk/python-beginner-tutorial/blob/main/sample16-blackjack.py'>sample16 blackjack</a>",
+        "Codes": [
+            {
+                "Nr": 56,
+                "CodeFormat": "Objct oriented blackjack game"
+            }
+        ]
+    }
+]

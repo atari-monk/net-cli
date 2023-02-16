@@ -1,0 +1,60 @@
+[
+    {
+        "Title": "Setup project. New github repo coloned.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "dotnet new sln"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "dotnet new classlib -n {0}",
+                "CodeParams": [
+                    {
+                        "Name": "Identity.Db",
+                        "Desc": "lib name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "dotnet sln add {0}",
+                "CodeParams": [
+                    {
+                        "Name": "./Identity.Db/",
+                        "Desc": "proj",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "dotnet build"
+            }
+        ]
+    },
+    {
+        "Title": "commit and push."
+    },
+    {
+        "Title": "Scaffold Identity in ASP.NET Core projects.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "dotnet new webapp --auth Individual -uld -o Identity.WebApp",
+                "CodeParams": [
+                    {
+                        "Desc": "with LocalDb"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Move data folder form web app to lib."
+    },
+    {
+        "Title": "Add nugets to lib. Build."
+    }
+]

@@ -1,0 +1,84 @@
+<li>
+    <p>
+        Created database named SqlTest. Backup to .bak file.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            <a href='https://github.com/atari-monk/sql/blob/main/Task1/Create.sql'>Create db tables</a>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            <a href='https://github.com/atari-monk/sql/blob/main/Task1/Insert.sql'>Insert data to db tables</a>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Write queries:
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Persons who have no address.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            SELECT p.[Id],p.[Name],p.[Surname],p.[IdNumber],p.[DateOfBirth]<br>FROM [dbo].[Person] p<br>LEFT JOIN [dbo].[Address] a<br>ON p.Id = a.PersonId<br>WHERE a.Id IS NULL;
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Unique name of person who are born during july, august.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            SELECT DISTINCT n, m FROM <br>(SELECT [Name] as n, MONTH([DateOfBirth]) as m<br>FROM [dbo].[Person])<br>AS data WHERE m IN ('7','8')
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Show one record with addres type witch is used the most and count of it used.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            select Top(1)<br>at.Name,<br>count(*) as c<br>FROM Address a<br>INNER JOIN AddressType at<br>ON a.AddressTypeId = at.Id<br>GROUP BY at.Name<br>ORDER BY c DESC;
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Persons with adresses of more that one type.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            select * FROM (<br>select<br>p.Name as Person<br>, at.Name as AddressType<br>, count(*) as c <br>FROM Address a<br>INNER JOIN AddressType at<br>ON a.AddressTypeId = at.Id<br>INNER JOIN Person p<br>ON a.PersonId = p.Id<br>GROUP BY p.Name, at.Name) selectA<br>WHERE c>1<br>ORDER BY selectA.c DESC;
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Average age of woman. (Truns out if digit before last one in IdNumber is even it's a woman)
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            SELECT AVG(age) FROM<br>(<br>SELECT Name<br>, Surname<br>, FLOOR(DATEDIFF(DAY, DateOfBirth, GETDATE()) / 365.25) AS age<br>, IdNumber<br>, SUBSTRING(IdNumber, 10, 1) AS Sex<br>FROM Person<br>) setectA<br>WHERE Sex % 2 = 0;
+        </code>
+        <br>
+    </p>
+</li>

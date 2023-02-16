@@ -1,0 +1,73 @@
+<li>
+    <p>
+        Setup project. New github repo coloned.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">lib name</mark></p>
+            <p><mark class="mark-name">proj</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            dotnet new sln
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            dotnet new classlib -n <mark class="mark-name">Identity.Db</mark>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            dotnet sln add <mark class="mark-name">./Identity.Db/</mark>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            dotnet build
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        commit and push.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Scaffold Identity in ASP.NET Core projects.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">with LocalDb</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            dotnet new webapp --auth Individual -uld -o Identity.WebApp
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Move data folder form web app to lib.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add nugets to lib. Build.
+    </p>
+    <p>
+    </p>
+</li>

@@ -1,0 +1,159 @@
+[
+    {
+        "Title": "Create new github repo"
+    },
+    {
+        "Title": "Open folder with VSCode"
+    },
+    {
+        "Title": "Setup project.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "dotnet new sln"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "dotnet new classlib -n Connection.Builder"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "dotnet sln add ./Connection.Builder/"
+            }
+        ]
+    },
+    {
+        "Title": "In csproj file set properties describing nuget",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "&lt;PackageId&gt;{0}&lt;/PackageId&gt;&lt;br&gt;&lt;Version&gt;{1}&lt;/Version&gt;&lt;br&gt;&lt;Authors&gt;{2}&lt;/Authors&gt;&lt;br&gt;&lt;Company&gt;{3}&lt;/Company&gt;&lt;br&gt;&lt;PackageTags&gt;{4}&lt;/PackageTags&gt;&lt;br&gt;&lt;Description&gt;{5}&lt;/Description&gt;",
+                "CodeParams": [
+                    {
+                        "Name": "Connection.Builder.15.11.2022.001.Test",
+                        "Desc": "Id name, unique in nuget.org",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "1.0.0",
+                        "Desc": "version",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "atari-monk",
+                        "Desc": "author",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "company name",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "tag1;tag2",
+                        "Desc": "tags important for searching nuget",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "Builds ConnectionString.",
+                        "Desc": "description",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Build",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "dotnet build"
+            }
+        ]
+    },
+    {
+        "Title": "Produce nuget file with dotnet cli.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "cd C:\\atari-monk\\Code\\connection-builder\\Connection.Builder",
+                "CodeParams": [
+                    {
+                        "Desc": "cd folder with csproj file"
+                    }
+                ]
+            },
+            {
+                "Nr": 7,
+                "CodeFormat": "dotnet nuget locals all --clear",
+                "CodeParams": [
+                    {
+                        "Desc": "clear your local packages cache (try to use below, this one takes ages to restore after)"
+                    }
+                ]
+            },
+            {
+                "Nr": 8,
+                "CodeFormat": "dotnet nuget locals temp -c"
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "dotnet nuget locals global-packages -c"
+            },
+            {
+                "Nr": 10,
+                "CodeFormat": "dotnet restore",
+                "CodeParams": [
+                    {
+                        "Desc": "clear your local packages cache"
+                    }
+                ]
+            },
+            {
+                "Nr": 11,
+                "CodeFormat": "dotnet pack -c Release -o {0}",
+                "CodeParams": [
+                    {
+                        "Name": "C:\\atari-monk\\Build\\nugets",
+                        "Desc": "build path",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "In target csproj file, add local nuget source. (also nuget.org)",
+        "Codes": [
+            {
+                "Nr": 12,
+                "CodeFormat": "&lt;RestoreSources&gt;$(RestoreSources);C:\\atari-monk\\Build\\nugets;https://api.nuget.org/v3/index.json&lt;/RestoreSources&gt;"
+            }
+        ]
+    },
+    {
+        "Title": "Consume nuget in target project.",
+        "Codes": [
+            {
+                "Nr": 13,
+                "CodeFormat": "cd C:\\atari-monk\\Code\\repo\\proj"
+            },
+            {
+                "Nr": 14,
+                "CodeFormat": "dotnet add package {0}",
+                "CodeParams": [
+                    {
+                        "Name": "Connection.Builder.19.11.2022",
+                        "Desc": "PackageId",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            },
+            {
+                "Nr": 15,
+                "CodeFormat": "dotnet restore"
+            }
+        ]
+    }
+]

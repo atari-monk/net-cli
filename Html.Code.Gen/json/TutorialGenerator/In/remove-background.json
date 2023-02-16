@@ -1,0 +1,23 @@
+[
+    {
+        "Title": "Open the Nvidia broadcast app and navigate to the Camera tab."
+    },
+    {
+        "Title": "Select your camera source"
+    },
+    {
+        "Title": "Select the resolution you want the camera to be."
+    },
+    {
+        "Title": "Select effect to “Background Removal” option."
+    },
+    {
+        "Title": "Add created virtual camera to Streamlabs/OBS.<br>Go to sources -> Add Source -> Camera -> Select Nvidia Broadcast.<br>You can resize and position this as you like."
+    },
+    {
+        "Title": "Use Nvidia Broadcast Microphone Features to remove background noise."
+    },
+    {
+        "Title": "Instead of removing your background you can replace it with any image you want."
+    }
+]

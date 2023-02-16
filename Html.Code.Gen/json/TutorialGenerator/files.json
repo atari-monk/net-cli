@@ -1,0 +1,110 @@
+{
+    "azure-secrets": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\azure-secrets.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\azure-secrets.html"
+    },
+    "azure-sql-db": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\azure-sql-db.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\azure-sql-db.html"
+    },
+    "cpp-compiler": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\cpp-compiler.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\cpp-compiler.html"
+    },
+    "csharp-job-test": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\csharp-job-test.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\csharp-job-test.html"
+    },
+    "foscam": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\foscam.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\foscam.html"
+    },
+    "html-beginner-tutorial": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\html-beginner-tutorial.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\html-beginner-tutorial.html"
+    },
+    "identity-db-lib": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\identity-db-lib.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\identity-db-lib.html"
+    },
+    "identity-web-app": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\identity-web-app.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\identity-web-app.html"
+    },
+    "javascript-beginner-game": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\javascript-beginner-game.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\javascript-beginner-game.html"
+    },
+    "new-github-repo": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\new-github-repo.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\new-github-repo.html"
+    },
+    "node-js-azure": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\node-js-azure.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\node-js-azure.html"
+    },
+    "nuget": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\nuget.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\nuget.html"
+    },
+    "path-sys-var": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\path-sys-var.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\path-sys-var.html"
+    },
+    "pong-dev": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\pong-dev.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\pong-dev.html"
+    },
+    "python-beginner-tutorial": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\python-beginner-tutorial.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\python-beginner-tutorial.html"
+    },
+    "remove-background": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\remove-background.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\remove-background.html"
+    },
+    "schema": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\schema.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\schema.html"
+    },
+    "secrets": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\secrets.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\secrets.html"
+    },
+    "socket-io-azure": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\socket-io-azure.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\socket-io-azure.html"
+    },
+    "sql": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\sql.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\sql.html"
+    },
+    "ssms-azure": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\ssms-azure.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\ssms-azure.html"
+    },
+    "stream-video": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\stream-video.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\stream-video.html"
+    },
+    "todo-app-azure": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\todo-app-azure.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\todo-app-azure.html"
+    },
+    "tools": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\tools.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\tools.html"
+    },
+    "voting-app-azure": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\voting-app-azure.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\voting-app-azure.html"
+    },
+    "vscode": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\vscode.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\vscode.html"
+    },
+    "web-app-dotnet-upgrade": {
+        "JsonPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\In\\web-app-dotnet-upgrade.json",
+        "HtmlPath": "C:\\atari-monk\\Code\\apps-data\\html-code-gen\\TutorialGenerator\\Out\\web-app-dotnet-upgrade.html"
+    }
+}

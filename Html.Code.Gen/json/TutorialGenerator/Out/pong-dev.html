@@ -1,0 +1,552 @@
+<li>
+    <p>
+        Coding Session 10.12.2022.<br>Return after weeks.<br>Fixin stuff after introduction of second canvas for text.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            Bugs in main Game (bad name SecondPlayer).<br>Wrong canvas id.<br>Move score to text Canvas.<br>Text canvas didnt clean old paint.<br>Move player scores to player sides (left, right) and change color to match player.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            In Wall Collision Test.<br>Add text canvas to Game ctor. A mistake. Removed.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            In Player Test. Separation of Game, GameInfo and their factories.<br>Later this turned out to be not needed, a mistake.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 11.12.2022.<br>Fixin stuff after introduction of second canvas for text.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            Remove text canvas from Game class.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            In Collision Left Test.<br>Separete class CollisionLeftTestInfoFactory.<br>Probably not needed mistake.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            In Wall Collision Test.<br>Fix Game ctor.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            In Player Test.<br>Fix Game ctor.<br>Move text to text canvas.<br>Update PlayerPrinter by moving description method to player class.<br>Facepalm, all printer classes are prolly to be removed as useless becouse these where game classes methods to begin with.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            In Wall Collision Test.<br>Create Ball description method in ball instead in BallPrinter.<br>Seperate layer for this was a mistake at this point.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 17.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            Refactor Wall Collision Test to test each wall separately.<br>Refactor this test and it's all parts, to simplify where possible.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 18.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code10')"></button>
+        <code id='code10'>
+            Fix bugs in Player Test. Print player info in text canvas.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 26.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code11')"></button>
+        <code id='code11'>
+            Add ScreenSize class, refactor wall and player tests to use it. Resize smaller for phone.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 28.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code12')"></button>
+        <code id='code12'>
+            Refactor my ball collision left test.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 28.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code13')"></button>
+        <code id='code13'>
+            Refactor my ball collision right test.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code14')"></button>
+        <code id='code14'>
+            Refactor rect collision test.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 29.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code15')"></button>
+        <code id='code15'>
+            Rename test files. Refactor slider.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code16')"></button>
+        <code id='code16'>
+            Refactor direction.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 30.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code17')"></button>
+        <code id='code17'>
+            Fix coll proto.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 31.12.2022.<br>Try to stop the chaos.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code18')"></button>
+        <code id='code18'>
+            Refactor direction.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 01.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code19')"></button>
+        <code id='code19'>
+            Add rotation formula to direction (translate axis to (0,0) than to (x,y)).
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 02.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code20')"></button>
+        <code id='code20'>
+            Add Entity - base class to Player and Ball.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code21')"></button>
+        <code id='code21'>
+            Add Ball instead of player to direction proto.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 03.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code22')"></button>
+        <code id='code22'>
+            Add ball render to direction.<br>Added EntityV2 with multiple renders (using inheritance).<br>Added BallV2.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code23')"></button>
+        <code id='code23'>
+            EntityV3, BallV3 with renderers composition instead of inheritance. (Separete renders for graphics and text)
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 04.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code24')"></button>
+        <code id='code24'>
+            Fix renders in direction proto. Fix ballV3 bug.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 05.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code25')"></button>
+        <code id='code25'>
+            Experiment with direction. ToDo: Create direction class, separete from Ball. To observe ball trajectory compared with it, also to be independant drom ball.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 06.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code26')"></button>
+        <code id='code26'>
+            Added Bearing class. Ball speed directed in direction of bearing vector. Ball has proper start in direction prototype. It starts toward left or right player, in such a direction as to score point.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 07.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code27')"></button>
+        <code id='code27'>
+            Ball direction is developed in direction prototype. Move it to the Game.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 08.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code28')"></button>
+        <code id='code28'>
+            Fix 0 angle case by makeing angle a litle bigger than 0. Add ball reset. Add reset to Direction, after Start click, reset when ball is off screen.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code29')"></button>
+        <code id='code29'>
+            New gui for laptop version.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 09.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code30')"></button>
+        <code id='code30'>
+            Improve gui/text. Added overlay to read mouse coordinates. Improved points look.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code31')"></button>
+        <code id='code31'>
+            TODO: Add Time class.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 10.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code32')"></button>
+        <code id='code32'>
+            Improve text. Refactored text drawing in pong only, broken everywhere else.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 11.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code33')"></button>
+        <code id='code33'>
+            Add points canvas. Add class to handle canvases easier.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 12.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code34')"></button>
+        <code id='code34'>
+            Fix scaling beetween diffrent screens. Fix canvas layout for Left Wall test.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 14.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code35')"></button>
+        <code id='code35'>
+            Add project plan. Plan content are: User Stories, Features, Flowchart, Architecture, this log.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code36')"></button>
+        <code id='code36'>
+            Add start button, add reset button, reset player and ball.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code37')"></button>
+        <code id='code37'>
+            ToDo: Reset points.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 15.01.2023.<br>Try to be productive.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code38')"></button>
+        <code id='code38'>
+            Reset points. Refactor points (prolly will be removed by state pattern but it's so pretty now). Fix Reset button game behavior.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code39')"></button>
+        <code id='code39'>
+            Add Mouse input class. Only coord for now.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 16.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code40')"></button>
+        <code id='code40'>
+            Steer player with mouse in test.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 17.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code41')"></button>
+        <code id='code41'>
+            Steer player with mouse in game.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code42')"></button>
+        <code id='code42'>
+            Add btns styling. Try to add menu section (weird layout). Add class to handle menu.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code43')"></button>
+        <code id='code43'>
+            TODO: Consolidate Player tests to one (mouse, keyboard sets control selection).
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code44')"></button>
+        <code id='code44'>
+            TODO: Steer player with second key set, in game.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 18.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code45')"></button>
+        <code id='code45'>
+            Try to fix player view as fast as possible. Merged player keyboard and mouse tests to one page.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code46')"></button>
+        <code id='code46'>
+            Failed to fix github pages deployment. Relative link dont work. TODO: try sln with jenkins on left view.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 19.01.2023.<br>Try to grow. Full day on it concept.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code47')"></button>
+        <code id='code47'>
+            Fixed github pages deployment by using js dynamic import feature. Fixed for Left.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code48')"></button>
+        <code id='code48'>
+            Hide menu by default, show when needed.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code49')"></button>
+        <code id='code49'>
+            Fix ugly printouts.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code50')"></button>
+        <code id='code50'>
+            Investigate merge of left and right wall test. Upgrade right to same standard as left first. <br> Using setTimeout as promise, chain left and right test in time. Fixed timer so it wont take delta spikes that are created when <br> canceling animation frames and restarting it. Even made it reapet with setInterval.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 21.01.2023.<br>Try to grow. Full day on it concept.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code51')"></button>
+        <code id='code51'>
+            I learned of bundling so my dynamic import solution is obsolete probably. Try to use modern tools to deploy in seperate repo. Bundling files should remove relative links that are not allowed on github pages. Failed due to dynamic scripts used in pong html.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code52')"></button>
+        <code id='code52'>
+            Created github branch dynamic-scripts witch will store current pong site state. It has dynamic scripts.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code53')"></button>
+        <code id='code53'>
+            On main branch, change solution structure. I mean, remove dynamic sripts and provide static links. So that npm and parcel has chance to work. Prepare page that can be independently run (static links).
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code54')"></button>
+        <code id='code54'>
+            Change main page to static links (css, js) to subpages. Change subpages to static links (css, js). <br> First, create set of links that will work locally.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code55')"></button>
+        <code id='code55'>
+            Change all subpages to static links (css, js). Update main page accordinglly.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 23.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code56')"></button>
+        <code id='code56'>
+            Add top and bottom wall test to walls test. Refactor. Rename files.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code57')"></button>
+        <code id='code57'>
+            Fix collision test.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code58')"></button>
+        <code id='code58'>
+            Add left and right to my collision test.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code59')"></button>
+        <code id='code59'>
+            Fix slider.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code60')"></button>
+        <code id='code60'>
+            Fix direction.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code61')"></button>
+        <code id='code61'>
+            Fix Wall Collision.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code62')"></button>
+        <code id='code62'>
+            Fix My Collision.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code63')"></button>
+        <code id='code63'>
+            Fix Arkanoid.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code64')"></button>
+        <code id='code64'>
+            Fix Game.
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Coding Session 25.01.2023.<br>Try to grow.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code65')"></button>
+        <code id='code65'>
+            Remove laptop version and make just one pong game version.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code66')"></button>
+        <code id='code66'>
+            Add npm config, parcel, make web project folder structure, fix name convention, build project, add new repo with github pages, fix github links.
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code67')"></button>
+        <code id='code67'>
+            TODO: problems with pollyfilling.
+        </code>
+        <br>
+    </p>
+</li>

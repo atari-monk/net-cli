@@ -1,0 +1,287 @@
+[
+    {
+        "Title": "Create new github repo.<br>Here using github portal.<br>Open in VSCode.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "identity-web-app",
+                "CodeParams": [
+                    {
+                        "Desc": "repo name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "cd C:\\atari-monk\\Code"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "git clone https://github.com/atari-monk/identity-web-app.git"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "cd identity-web-app"
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": "code ."
+            }
+        ]
+    },
+    {
+        "Title": "Generate web app with identity.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "dotnet new list",
+                "CodeParams": [
+                    {
+                        "Desc": "optional to check options",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            },
+            {
+                "Nr": 7,
+                "CodeFormat": "dotnet new mvc --auth Individual -uld -n Identity.WebApp",
+                "CodeParams": [
+                    {
+                        "Desc": "This uses LocalDb. There is option with SQLite",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Setup project. Restart VSCode (for some reason it needs it).",
+        "Codes": [
+            {
+                "Nr": 8,
+                "CodeFormat": "dotnet new sln"
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "dotnet sln add Identity.WebApp"
+            }
+        ]
+    },
+    {
+        "Title": "VSCode should add it's json configs. Optionally add them to ignore, to not commit it.",
+        "Codes": [
+            {
+                "Nr": 10,
+                "CodeFormat": "*.vscode",
+                "CodeParams": [
+                    {
+                        "Desc": "add to .gitignore",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Do migrations.",
+        "Codes": [
+            {
+                "Nr": 11,
+                "CodeFormat": "dotnet tool update --global dotnet-ef"
+            },
+            {
+                "Nr": 12,
+                "CodeFormat": "cd .\\Identity.WebApp\\"
+            },
+            {
+                "Nr": 13,
+                "CodeFormat": "dotnet ef database update"
+            }
+        ]
+    },
+    {
+        "Title": "Run the app and register a user and login. (With debugger and/or without).",
+        "Codes": [
+            {
+                "Nr": 14,
+                "CodeFormat": "dotnet run"
+            }
+        ]
+    },
+    {
+        "Title": "Configure Identity services.<br>I copied default settings from msdocs and put it in class invoked in program.cs.<br>It's refactored to better readability."
+    },
+    {
+        "Title": "Add db connection string buider, with help of <a href=\"./nuget.html\">Nuget</a> and <a href=\"./azure-secrets.html\">Azure Secrets</a>."
+    },
+    {
+        "Title": "Scaffold Identity UI. Use commands you acctualy need for this. Below some set.",
+        "Codes": [
+            {
+                "Nr": 15,
+                "CodeFormat": "dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design"
+            },
+            {
+                "Nr": 16,
+                "CodeFormat": "dotnet add package Microsoft.EntityFrameworkCore.Design"
+            },
+            {
+                "Nr": 17,
+                "CodeFormat": "dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore"
+            },
+            {
+                "Nr": 18,
+                "CodeFormat": "dotnet add package Microsoft.AspNetCore.Identity.UI"
+            },
+            {
+                "Nr": 19,
+                "CodeFormat": "dotnet add package Microsoft.EntityFrameworkCore.SqlServer"
+            },
+            {
+                "Nr": 20,
+                "CodeFormat": "dotnet add package Microsoft.EntityFrameworkCore.Tools"
+            },
+            {
+                "Nr": 21,
+                "CodeFormat": "dotnet tool install -g dotnet-aspnet-codegenerator"
+            },
+            {
+                "Nr": 22,
+                "CodeFormat": "dotnet tool update -g dotnet-aspnet-codegenerator"
+            },
+            {
+                "Nr": 23,
+                "CodeFormat": "dotnet aspnet-codegenerator identity -h"
+            },
+            {
+                "Nr": 24,
+                "CodeFormat": "dotnet aspnet-codegenerator identity -dc Identity.WebApp.Data.ApplicationDbContext",
+                "CodeParams": [
+                    {
+                        "Desc": "this should generate all available UI",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Error thrown.",
+        "Codes": [
+            {
+                "Nr": 25,
+                "CodeFormat": "Cannot use an existing DbContext with the '--useDefaultUI' option"
+            }
+        ]
+    },
+    {
+        "Title": "Removed --useDefaultUI from command. Fixed error."
+    },
+    {
+        "Title": "Removed null warns/problems from generated code."
+    },
+    {
+        "Title": "Add [Authorize] on privacy page in controller. To test identity."
+    },
+    {
+        "Title": "Upgraded connection builder to handle locally trusted connection.<br>I dont like to clear all nugets, it take ages to restore them after that.",
+        "Codes": [
+            {
+                "Nr": 26,
+                "CodeFormat": "dotnet nuget locals temp -c"
+            },
+            {
+                "Nr": 27,
+                "CodeFormat": "dotnet nuget locals global-packages -c"
+            }
+        ]
+    },
+    {
+        "Title": "Created local db by ef core migrations.",
+        "Codes": [
+            {
+                "Nr": 28,
+                "CodeFormat": "dotnet ef database update"
+            }
+        ]
+    },
+    {
+        "Title": "Tested register, login, logout locally."
+    },
+    {
+        "Title": "Below commands was used to deploy to Azure.<br>As output, there is connection string.<br>Based on <a href='todo-app-azure.html'>todo-app-azure</a>.",
+        "Codes": [
+            {
+                "Nr": 29,
+                "CodeFormat": "az login"
+            },
+            {
+                "Nr": 30,
+                "CodeFormat": "az login --tenant id",
+                "CodeParams": [
+                    {
+                        "Desc": "sometimes it returns this, with id, to log with cell phone",
+                        "CssClass": "mark-desc"
+                    }
+                ]
+            },
+            {
+                "Nr": 31,
+                "CodeFormat": "az group create --name identity-web-app-rg --location swedencentral --tags identity-web-app resource group"
+            },
+            {
+                "Nr": 32,
+                "CodeFormat": "az webapp create --name atari-monk-identity-web-app --runtime 'DOTNETCORE:7.0' --plan atari-monk-appservice-plan1 --resource-group identity-web-app-rg"
+            },
+            {
+                "Nr": 33,
+                "CodeFormat": "az sql db create --resource-group az-sql-db1-rg --server atari-monk-sql-server1 --name identityDb"
+            },
+            {
+                "Nr": 34,
+                "CodeFormat": "az webapp connection create sql --resource-group identity-web-app-rg --name atari-monk-identity-web-app --target-resource-group az-sql-db1-rg --server atari-monk-sql-server1 --database identityDb --client-type dotnet --query configurations"
+            }
+        ]
+    },
+    {
+        "Title": "Connection string from Azure was input as local secrets.<br>Based on <a href='secrets.html'>secrets</a> and <a href='azure-secrets.html'>azure secrets</a>.",
+        "Codes": [
+            {
+                "Nr": 35,
+                "CodeFormat": "dotnet user-secrets set 'Server' 'atari-monk-sql-server1.database.windows.net'"
+            },
+            {
+                "Nr": 36,
+                "CodeFormat": "dotnet user-secrets set 'DbPort' '1433'"
+            },
+            {
+                "Nr": 37,
+                "CodeFormat": "dotnet user-secrets set 'DbUser' 'atari-monk'"
+            },
+            {
+                "Nr": 38,
+                "CodeFormat": "dotnet user-secrets set 'DbPassword' 'x'"
+            },
+            {
+                "Nr": 39,
+                "CodeFormat": "dotnet user-secrets set 'Database' 'identityDb'"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy migrations on Azure sql server.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "dotnet ef database update"
+            }
+        ]
+    },
+    {
+        "Title": "Build and Deploy web app on Azure App Services. (Right-click on publish folder and select Deploy to Web App). Test app."
+    },
+    {
+        "Title": "At this point i had realised that db on Azure was above S0 witch costed me. Had to mail with support. They agread to forgive cost on 04.12.2022.<br>I deleted all resources before mailing with them."
+    }
+]

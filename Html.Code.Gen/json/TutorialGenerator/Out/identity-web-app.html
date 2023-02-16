@@ -1,0 +1,378 @@
+<li>
+    <p>
+        Create new github repo.<br>Here using github portal.<br>Open in VSCode.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">repo name</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            identity-web-app
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            cd C:\atari-monk\Code
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            git clone https://github.com/atari-monk/identity-web-app.git
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            cd identity-web-app
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            code .
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Generate web app with identity.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-desc">optional to check options</mark></p>
+            <p><mark class="mark-desc">This uses LocalDb. There is option with SQLite</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            dotnet new list
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            dotnet new mvc --auth Individual -uld -n Identity.WebApp
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Setup project. Restart VSCode (for some reason it needs it).
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            dotnet new sln
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            dotnet sln add Identity.WebApp
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        VSCode should add it's json configs. Optionally add them to ignore, to not commit it.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-desc">add to .gitignore</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code10')"></button>
+        <code id='code10'>
+            *.vscode
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Do migrations.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code11')"></button>
+        <code id='code11'>
+            dotnet tool update --global dotnet-ef
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code12')"></button>
+        <code id='code12'>
+            cd .\Identity.WebApp\
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code13')"></button>
+        <code id='code13'>
+            dotnet ef database update
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Run the app and register a user and login. (With debugger and/or without).
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code14')"></button>
+        <code id='code14'>
+            dotnet run
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Configure Identity services.<br>I copied default settings from msdocs and put it in class invoked in program.cs.<br>It's refactored to better readability.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add db connection string buider, with help of <a href="./nuget.html">Nuget</a> and <a href="./azure-secrets.html">Azure Secrets</a>.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Scaffold Identity UI. Use commands you acctualy need for this. Below some set.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-desc">this should generate all available UI</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code15')"></button>
+        <code id='code15'>
+            dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code16')"></button>
+        <code id='code16'>
+            dotnet add package Microsoft.EntityFrameworkCore.Design
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code17')"></button>
+        <code id='code17'>
+            dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code18')"></button>
+        <code id='code18'>
+            dotnet add package Microsoft.AspNetCore.Identity.UI
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code19')"></button>
+        <code id='code19'>
+            dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code20')"></button>
+        <code id='code20'>
+            dotnet add package Microsoft.EntityFrameworkCore.Tools
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code21')"></button>
+        <code id='code21'>
+            dotnet tool install -g dotnet-aspnet-codegenerator
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code22')"></button>
+        <code id='code22'>
+            dotnet tool update -g dotnet-aspnet-codegenerator
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code23')"></button>
+        <code id='code23'>
+            dotnet aspnet-codegenerator identity -h
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code24')"></button>
+        <code id='code24'>
+            dotnet aspnet-codegenerator identity -dc Identity.WebApp.Data.ApplicationDbContext
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Error thrown.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code25')"></button>
+        <code id='code25'>
+            Cannot use an existing DbContext with the '--useDefaultUI' option
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Removed --useDefaultUI from command. Fixed error.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Removed null warns/problems from generated code.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Add [Authorize] on privacy page in controller. To test identity.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Upgraded connection builder to handle locally trusted connection.<br>I dont like to clear all nugets, it take ages to restore them after that.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code26')"></button>
+        <code id='code26'>
+            dotnet nuget locals temp -c
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code27')"></button>
+        <code id='code27'>
+            dotnet nuget locals global-packages -c
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Created local db by ef core migrations.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code28')"></button>
+        <code id='code28'>
+            dotnet ef database update
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Tested register, login, logout locally.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Below commands was used to deploy to Azure.<br>As output, there is connection string.<br>Based on <a href='todo-app-azure.html'>todo-app-azure</a>.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-desc">sometimes it returns this, with id, to log with cell phone</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code29')"></button>
+        <code id='code29'>
+            az login
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code30')"></button>
+        <code id='code30'>
+            az login --tenant id
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code31')"></button>
+        <code id='code31'>
+            az group create --name identity-web-app-rg --location swedencentral --tags identity-web-app resource group
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code32')"></button>
+        <code id='code32'>
+            az webapp create --name atari-monk-identity-web-app --runtime 'DOTNETCORE:7.0' --plan atari-monk-appservice-plan1 --resource-group identity-web-app-rg
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code33')"></button>
+        <code id='code33'>
+            az sql db create --resource-group az-sql-db1-rg --server atari-monk-sql-server1 --name identityDb
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code34')"></button>
+        <code id='code34'>
+            az webapp connection create sql --resource-group identity-web-app-rg --name atari-monk-identity-web-app --target-resource-group az-sql-db1-rg --server atari-monk-sql-server1 --database identityDb --client-type dotnet --query configurations
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Connection string from Azure was input as local secrets.<br>Based on <a href='secrets.html'>secrets</a> and <a href='azure-secrets.html'>azure secrets</a>.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code35')"></button>
+        <code id='code35'>
+            dotnet user-secrets set 'Server' 'atari-monk-sql-server1.database.windows.net'
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code36')"></button>
+        <code id='code36'>
+            dotnet user-secrets set 'DbPort' '1433'
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code37')"></button>
+        <code id='code37'>
+            dotnet user-secrets set 'DbUser' 'atari-monk'
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code38')"></button>
+        <code id='code38'>
+            dotnet user-secrets set 'DbPassword' 'x'
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code39')"></button>
+        <code id='code39'>
+            dotnet user-secrets set 'Database' 'identityDb'
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Deploy migrations on Azure sql server.
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            dotnet ef database update
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Build and Deploy web app on Azure App Services. (Right-click on publish folder and select Deploy to Web App). Test app.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        At this point i had realised that db on Azure was above S0 witch costed me. Had to mail with support. They agread to forgive cost on 04.12.2022.<br>I deleted all resources before mailing with them.
+    </p>
+    <p>
+    </p>
+</li>

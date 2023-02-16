@@ -1,0 +1,76 @@
+[
+    {
+        "Title": "",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    },
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

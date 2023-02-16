@@ -1,0 +1,33 @@
+[
+  {
+    "Title": "Coding Session 27.01.2023.<br>Return to project.",
+    "Codes": [
+      {
+        "CodeFormat": "Refactor. Remove line by line string building. Use C# multiline string."
+      }
+    ]
+  },
+  {
+    "Title": "Coding Session 01.02.2023.",
+    "Codes": [
+      {
+        "CodeFormat": "Finish testing tutorial generator 2."
+      },
+      {
+        "CodeFormat": "Add notes page template named TutorialNotes."
+      },
+      {
+        "CodeFormat": "Add page template TutorialNotes.html to code generator, automating page generation, based on json data."
+      },
+      {
+        "CodeFormat": "Update data storage paths."
+      },
+      {
+        "CodeFormat": "Add cli commands for every operation."
+      },
+      {
+        "CodeFormat": "Add todo's in docs."
+      }
+    ]
+  }
+]

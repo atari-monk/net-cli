@@ -1,0 +1,464 @@
+[
+    {
+        "Title": "Notes from lessons"
+    },
+    {
+        "Title": "setup",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "install chrome extension dark new tab"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "install VSC extension prettier - code formatter"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "install VSC extension vscode-icons"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "install VSC extension github theme, set dark default"
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": "install VSC extension live server"
+            }
+        ]
+    },
+    {
+        "Title": "lesson01 - template",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "index.html - lower case convention for hosting reasons"
+            },
+            {
+                "Nr": 7,
+                "CodeFormat": "html - html page"
+            },
+            {
+                "Nr": 8,
+                "CodeFormat": "head - metadata on the page"
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "body - seen in browser"
+            },
+            {
+                "Nr": 10,
+                "CodeFormat": "h1 - header"
+            },
+            {
+                "Nr": 11,
+                "CodeFormat": "p - paragraph, write p and hit tab"
+            }
+        ]
+    },
+    {
+        "Title": "lesson02 - template",
+        "Codes": [
+            {
+                "Nr": 12,
+                "CodeFormat": "meta author"
+            },
+            {
+                "Nr": 13,
+                "CodeFormat": "meta desc"
+            },
+            {
+                "Nr": 14,
+                "CodeFormat": "alt+z to Word Wrap in vscode"
+            },
+            {
+                "Nr": 15,
+                "CodeFormat": "icon"
+            }
+        ]
+    },
+    {
+        "Title": "lesson03 - text",
+        "Codes": [
+            {
+                "Nr": 16,
+                "CodeFormat": "alt+z on new file"
+            },
+            {
+                "Nr": 17,
+                "CodeFormat": "shift + alt + down - copy line or many lines"
+            },
+            {
+                "Nr": 18,
+                "CodeFormat": "h1 title, h2 topic, h3 subtopic"
+            },
+            {
+                "Nr": 19,
+                "CodeFormat": "headers give hierarchy to content"
+            },
+            {
+                "Nr": 20,
+                "CodeFormat": "hr - line"
+            },
+            {
+                "Nr": 21,
+                "CodeFormat": "white space collapsing in html"
+            },
+            {
+                "Nr": 22,
+                "CodeFormat": "br - line break"
+            },
+            {
+                "Nr": 23,
+                "CodeFormat": "block element - breaks line, like p, h1"
+            },
+            {
+                "Nr": 24,
+                "CodeFormat": "inline element - dosnt break line like em - emphasise, strong - strong emphasise"
+            },
+            {
+                "Nr": 25,
+                "CodeFormat": "abbr - tooltip with expand of abbrevietion"
+            },
+            {
+                "Nr": 26,
+                "CodeFormat": "html entity - special chars"
+            },
+            {
+                "Nr": 27,
+                "CodeFormat": "&amp;nbsp; - space"
+            },
+            {
+                "Nr": 28,
+                "CodeFormat": "&amp;lt; - <"
+            },
+            {
+                "Nr": 29,
+                "CodeFormat": "&amp;copy; - copy right symbol"
+            },
+            {
+                "Nr": 30,
+                "CodeFormat": "address - paragraph with address"
+            },
+            {
+                "Nr": 31,
+                "CodeFormat": "&lt;!-- --&gt; - comment"
+            },
+            {
+                "Nr": 32,
+                "CodeFormat": "ctr+u or inspect in browser shows page code so also comments"
+            },
+            {
+                "Nr": 33,
+                "CodeFormat": "in page code one can see live server javascript addons"
+            }
+        ]
+    },
+    {
+        "Title": "lesson04-lists",
+        "Codes": [
+            {
+                "Nr": 34,
+                "CodeFormat": "ctrl+D to highlight same section below"
+            },
+            {
+                "Nr": 35,
+                "CodeFormat": "li - list element, type li press tab"
+            },
+            {
+                "Nr": 36,
+                "CodeFormat": "ol - ordered list"
+            },
+            {
+                "Nr": 37,
+                "CodeFormat": "ul - unordered list"
+            },
+            {
+                "Nr": 38,
+                "CodeFormat": "li - dosnt create extra space between lines unless p is in the li"
+            },
+            {
+                "Nr": 39,
+                "CodeFormat": "dl - description list"
+            },
+            {
+                "Nr": 40,
+                "CodeFormat": "dt - description term"
+            },
+            {
+                "Nr": 41,
+                "CodeFormat": "dd- description detail"
+            }
+        ]
+    },
+    {
+        "Title": "lesson05 - link",
+        "Codes": [
+            {
+                "Nr": 42,
+                "CodeFormat": "a - link pages"
+            },
+            {
+                "Nr": 43,
+                "CodeFormat": "href - absolute text ip address for other servers<br>relative path on same server, project"
+            },
+            {
+                "Nr": 44,
+                "CodeFormat": "lorem*1 - adds placeholder text"
+            },
+            {
+                "Nr": 45,
+                "CodeFormat": "section - divides page into sections with attribute id (name)"
+            },
+            {
+                "Nr": 46,
+                "CodeFormat": "nav - navigation, for ex. on list with a (anchors)"
+            },
+            {
+                "Nr": 47,
+                "CodeFormat": "# - before id name in href to section"
+            },
+            {
+                "Nr": 48,
+                "CodeFormat": "in anchor (a) text place shortest possible desc of destination page"
+            },
+            {
+                "Nr": 49,
+                "CodeFormat": "download - in <a> lets download some resource"
+            },
+            {
+                "Nr": 50,
+                "CodeFormat": "mailto: - mail in href, not used since crawlers colect mails, contact forms instead"
+            },
+            {
+                "Nr": 51,
+                "CodeFormat": "tel:"
+            },
+            {
+                "Nr": 52,
+                "CodeFormat": "target='_blank' - link opens new tab"
+            },
+            {
+                "Nr": 53,
+                "CodeFormat": "/ - in href links to default page in same folder"
+            }
+        ]
+    },
+    {
+        "Title": "lesson06 - image",
+        "Codes": [
+            {
+                "Nr": 54,
+                "CodeFormat": "img tab - for img markup"
+            },
+            {
+                "Nr": 55,
+                "CodeFormat": "alt - text if img is not reachable"
+            },
+            {
+                "Nr": 56,
+                "CodeFormat": "title - text in tooltip on img"
+            },
+            {
+                "Nr": 57,
+                "CodeFormat": "width, height - tell browser default img size so it dosent shift it"
+            },
+            {
+                "Nr": 58,
+                "CodeFormat": "loading - eager is default, lazy - loads only when scrolling"
+            },
+            {
+                "Nr": 59,
+                "CodeFormat": "br*150 - types 150 break lines"
+            },
+            {
+                "Nr": 60,
+                "CodeFormat": "figure - html element used with img and figcaption element (desc)"
+            },
+            {
+                "Nr": 61,
+                "CodeFormat": "single ' can be used inside \"\""
+            },
+            {
+                "Nr": 62,
+                "CodeFormat": "code - element for code display"
+            }
+        ]
+    },
+    {
+        "Title": "lesson07 - semantic tags",
+        "Codes": [
+            {
+                "Nr": 63,
+                "CodeFormat": "h1 - one per page, title"
+            },
+            {
+                "Nr": 64,
+                "CodeFormat": "h2 - subtopic"
+            },
+            {
+                "Nr": 65,
+                "CodeFormat": "h1 to h3 per page"
+            },
+            {
+                "Nr": 66,
+                "CodeFormat": "nav"
+            },
+            {
+                "Nr": 67,
+                "CodeFormat": "hr - topic change"
+            },
+            {
+                "Nr": 68,
+                "CodeFormat": "header - header of the page"
+            },
+            {
+                "Nr": 69,
+                "CodeFormat": "main - marks main page content"
+            },
+            {
+                "Nr": 70,
+                "CodeFormat": "footer - footer of a page"
+            },
+            {
+                "Nr": 71,
+                "CodeFormat": "multiple nav should be labeled"
+            },
+            {
+                "Nr": 72,
+                "CodeFormat": "article - clear topic with h2"
+            },
+            {
+                "Nr": 73,
+                "CodeFormat": "can contain sections with h3"
+            },
+            {
+                "Nr": 74,
+                "CodeFormat": "aside"
+            },
+            {
+                "Nr": 75,
+                "CodeFormat": "details"
+            },
+            {
+                "Nr": 76,
+                "CodeFormat": "summary"
+            },
+            {
+                "Nr": 77,
+                "CodeFormat": "mark - highlight text"
+            },
+            {
+                "Nr": 78,
+                "CodeFormat": "time - with datetime attribute"
+            },
+            {
+                "Nr": 79,
+                "CodeFormat": "div - dividers, do not use them as they dont provide meaning to assistive technology"
+            },
+            {
+                "Nr": 80,
+                "CodeFormat": "span - as div, use only when no other semantic element with more meaning"
+            },
+            {
+                "Nr": 81,
+                "CodeFormat": "html outliner - chrome extension"
+            }
+        ]
+    },
+    {
+        "Title": "lesson08 - tables",
+        "Codes": [
+            {
+                "Nr": 82,
+                "CodeFormat": "tables structure data, do not use them as page layout as in 90's"
+            },
+            {
+                "Nr": 83,
+                "CodeFormat": "table"
+            },
+            {
+                "Nr": 84,
+                "CodeFormat": "tr - table row"
+            },
+            {
+                "Nr": 85,
+                "CodeFormat": "td - table data"
+            },
+            {
+                "Nr": 86,
+                "CodeFormat": "shift alt down arrow on selected row helps"
+            },
+            {
+                "Nr": 87,
+                "CodeFormat": "to see table css is needed"
+            },
+            {
+                "Nr": 88,
+                "CodeFormat": "table expands to it's content, not to width of page"
+            },
+            {
+                "Nr": 89,
+                "CodeFormat": "th - table headings"
+            },
+            {
+                "Nr": 90,
+                "CodeFormat": "colspan, rowspan - attributes"
+            },
+            {
+                "Nr": 91,
+                "CodeFormat": "semantics of table"
+            },
+            {
+                "Nr": 92,
+                "CodeFormat": "table"
+            },
+            {
+                "Nr": 93,
+                "CodeFormat": "caption"
+            },
+            {
+                "Nr": 94,
+                "CodeFormat": "thead"
+            },
+            {
+                "Nr": 95,
+                "CodeFormat": "tbody"
+            },
+            {
+                "Nr": 96,
+                "CodeFormat": "tfoot"
+            },
+            {
+                "Nr": 97,
+                "CodeFormat": "scope - th attribute row or column"
+            }
+        ]
+    },
+    {
+        "Title": "lesson09 - input forms",
+        "Codes": [
+            {
+                "Nr": 98,
+                "CodeFormat": "add nav section, add article, h2"
+            },
+            {
+                "Nr": 99,
+                "CodeFormat": "form - with action, method"
+            },
+            {
+                "Nr": 100,
+                "CodeFormat": "dont send sensitive info with get as they are in url"
+            }
+        ]
+    },
+    {
+        "Title": "lesson10 - beginner project",
+        "Codes": [
+            {
+                "Nr": 101,
+                "CodeFormat": "every tag of html has inteli sense, just type name and press tab"
+            }
+        ]
+    }
+]

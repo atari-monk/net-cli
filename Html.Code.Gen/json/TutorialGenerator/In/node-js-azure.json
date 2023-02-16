@@ -1,0 +1,142 @@
+[
+    {
+        "Title": "Create new github repo, open git bash in Code folder, clone it.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "git clone https://github.com/atari-monk/web-dev-basics.git"
+            }
+        ]
+    },
+    {
+        "Title": "Verify that Node.js is installed.",
+        "Codes": [
+            {
+                "Nr": 2,
+                "CodeFormat": "node --version"
+            }
+        ]
+    },
+    {
+        "Title": "Create a Node.js application using the Express Generator.",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "cd {0} && npx express-generator {1} --view ejs",
+                "CodeParams": [
+                    {
+                        "Name": "web-dev-basics",
+                        "Desc": "repo folder",
+                        "CssClass": "mark-name"
+                    },
+                    {
+                        "Name": "myExpressApp",
+                        "Desc": "app name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Install the NPM packages to the app.",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "cd {0} && npm install",
+                "CodeParams": [
+                    {
+                        "Name": "myExpressApp",
+                        "Desc": "app name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Start the development server with debug information.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "DEBUG={0}:* npm start",
+                "CodeParams": [
+                    {
+                        "Name": "myExpressApp",
+                        "Desc": "app name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Test in the browser.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "http://localhost:3000"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy to cloud using VSCode Azure extension.<br>Sign in. Azure email should be in status bar and subscription in explorer."
+    },
+    {
+        "Title": "Right-click on App Services, Create new Web App. A Linux container is used by default."
+    },
+    {
+        "Title": "Name unique in Azure ('A-Z', 'a-z', '0-9', '-').",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "atari-monk-myExpressApp",
+                "CodeParams": [
+                    {
+                        "Desc": "example name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Select Node runtime stack and Node.js latest LTS (long term support) version."
+    },
+    {
+        "Title": "Select pricing tier Free (F1)."
+    },
+    {
+        "Title": "All options are in right click menu of App Services in explorer."
+    },
+    {
+        "Title": "Error - Couldn't detect a version for the platform 'nodejs' in the repo."
+    },
+    {
+        "Title": "In .vscode/settings.json paste (for Azure extension to deploy without above error)",
+        "Codes": [
+            {
+                "Nr": 8,
+                "CodeFormat": "\"appService.defaultWebAppToDeploy\": \"{0}\"",
+                "CodeParams": [
+                    {
+                        "Name": "web-dev-basics", 
+                        "Desc": "app repo name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "\"appService.deploySubpath\": \"{0}\"",
+                "CodeParams": [
+                    {
+                        "Name": "myExpressApp", 
+                        "Desc": "app proj folder",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,392 @@
+<li>
+    <p>
+        Open Code powershell (shell set on folder Code)
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Clone example repo. (Prerequisite)
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code1')"></button>
+        <code id='code1'>
+            git clone https://github.com/Azure-Samples/msdocs-app-service-sqldb-dotnetcore.git
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code2')"></button>
+        <code id='code2'>
+            cd msdocs-app-service-sqldb-dotnetcore
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create new repo on github. Named todo-web-app. Copy project there and commit. (Prerequisite)
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Login to Azure CLI
+    </p>
+    <p>
+        <button class='btn-copy' onclick="Copy('code3')"></button>
+        <code id='code3'>
+            az login
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create resource group for to-do-app project.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-rg">resource group</mark></p>
+            <p><mark class="mark-location">location</mark></p>
+            <p><mark class="mark-tag">description tag</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code4')"></button>
+        <code id='code4'>
+            az group create --name <mark class="mark-rg">todo-web-app-rg</mark> --location <mark class="mark-location">swedencentral</mark> --tags <mark class="mark-tag">todo-web-app resource group</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create resource group App Service plans.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-rg">resource group</mark></p>
+            <p><mark class="mark-location">location</mark></p>
+            <p><mark class="mark-tag">description tag</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code5')"></button>
+        <code id='code5'>
+            az group create --name <mark class="mark-rg">atari-monk-appservice-plans-rg</mark> --location <mark class="mark-location">swedencentral</mark> --tags <mark class="mark-tag">appservice-plans resource group</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create an App Service plan.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">App Service plan name</mark></p>
+            <p><mark class="mark-rg">resource group</mark></p>
+            <p><mark class="mark-option">Free az plan tier</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code6')"></button>
+        <code id='code6'>
+            az appservice plan create --name <mark class="mark-name">atari-monk-appservice-plan1</mark> --resource-group <mark class="mark-rg">atari-monk-appservice-plans-rg</mark> --is-linux --sku <mark class="mark-option">F1</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        See available runtimes for your app. To choose one. (optional)
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-desc">for Linux</mark></p>
+            <p><mark class="mark-desc">for Windows</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code7')"></button>
+        <code id='code7'>
+            az webapp list-runtimes --os linux --output table
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code8')"></button>
+        <code id='code8'>
+            az webapp list-runtimes --os windows --output table
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create the App Service web app.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">Generates domain name https://<app service name>.azurewebsites.com (needs to be unique in azuzre)</mark></p>
+            <p><mark class="mark-name">runtime</mark></p>
+            <p><mark class="mark-name"></mark></p>
+            <p><mark class="mark-rg">resource group</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code9')"></button>
+        <code id='code9'>
+            az webapp create --name <mark class="mark-name">atari-monk-todo-web-app</mark> --runtime "<mark class="mark-name">DOTNETCORE:7.0</mark>" --plan <mark class="mark-name">atari-monk-appservice-plan1</mark> --resource-group <mark class="mark-rg">todo-web-app-rg</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Create an Azure SQL Server to host the database<br>This was done in tutorial <a href="./azure-sql-db.html">Azure SQL Database</a>
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Create db on server.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-rg">rg of sql server</mark></p>
+            <p><mark class="mark-name">az sql server name</mark></p>
+            <p><mark class="mark-name">name of db</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code10')"></button>
+        <code id='code10'>
+            az sql db create --resource-group <mark class="mark-rg">az-sql-db1-rg</mark> --server <mark class="mark-name">atari-monk-sql-server1</mark> --name <mark class="mark-name">coreDb</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Connect the App to the Database.<br>When prompted, provide the login and password you used when creating azure sql server!.<br>(Chars of password are not visible at all, but paste works)<br>Copy this connection string value from the output for later.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-rg">rg witch contains the web app</mark></p>
+            <p><mark class="mark-name">web app name</mark></p>
+            <p><mark class="mark-rg">rg witch contains the sql server</mark></p>
+            <p><mark class="mark-name">server already created in az</mark></p>
+            <p><mark class="mark-name">name of db</mark></p>
+            <p><mark class="mark-option">client type</mark></p>
+            <p><mark class="mark-name">connection name</mark></p>
+            <p><mark class="mark-option">removing --query param will show more logs</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code11')"></button>
+        <code id='code11'>
+            az webapp connection create sql --resource-group <mark class="mark-rg">todo-web-app-rg</mark> --name <mark class="mark-name">atari-monk-todo-web-app</mark> --target-resource-group <mark class="mark-rg">az-sql-db1-rg</mark> --server <mark class="mark-name">atari-monk-sql-server1</mark> --database <mark class="mark-name">coreDb</mark> --client-type <mark class="mark-option">dotnet</mark> --connection <mark class="mark-name">sql_e73o5</mark> --query <mark class="mark-option">configurations</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Set up a firewall rule on the SQL database server.<br>This was done in tutorial <a href="./azure-sql-db.html">Azure SQL Database</a>
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Update the appsettings.json of app, with generated connection string.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">Example connextion string</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code12')"></button>
+        <code id='code12'>
+            "AZURE_SQL_CONNECTIONSTRING": "Data Source=<your-server-name>.database.windows.net,1433;Initial Catalog=coreDb;User ID=<username>;Password=<password>"
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Update app setup in program.cs (older apps may have it in Startup.cs)
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">set connection string name to use with ef core context and sql server</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code13')"></button>
+        <code id='code13'>
+            services.AddDbContext<MyDatabaseContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")));
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        From a local terminal applay migrations.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">you need to be in project with migrations folder</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">if needed</mark></p>
+            <p><mark class="">run migrations on db</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code14')"></button>
+        <code id='code14'>
+            cd DotNetCoreSqlDb
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code15')"></button>
+        <code id='code15'>
+            dotnet tool install -g dotnet-ef
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code16')"></button>
+        <code id='code16'>
+            dotnet tool update -g dotnet-ef
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code17')"></button>
+        <code id='code17'>
+            dotnet ef migrations add InitialCreate
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code18')"></button>
+        <code id='code18'>
+            dotnet ef database update
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        error Client with IP address xxx.xxx.xxx.xxx is not allowed to access the server<br>means your Azure firewall rule is incorrect<br>use ip from error to update it.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Deploy to the App Service with VS Code<br>Install Azure Account and Azure App Service extensions<br>Login with Account extension<br>
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">deployable publish folder for the app in the bin/release/publish directory</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code19')"></button>
+        <code id='code19'>
+            dotnet publish -c Release
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Right-click on publish folder and select Deploy to Web App.
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Test web app in the browser.<br>In Azure Portal, Browse link at the top of the App Service overview page
+    </p>
+    <p>
+    </p>
+</li>
+<li>
+    <p>
+        Use Kudu tool to get info on deployment.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="">For apps deployed in Free, Shared, Basic, Standard, and Premium App Service plans</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code20')"></button>
+        <code id='code20'>
+            https://<app-name>.scm.azurewebsites.net
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Configure and Stream Application Logs.<br>To filesystem or console.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-name">web app service name</mark></p>
+            <p><mark class="mark-rg">resource group</mark></p>
+            <p><mark class="mark-name">web app service name</mark></p>
+            <p><mark class="mark-rg">resource group</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code21')"></button>
+        <code id='code21'>
+            az webapp log config --web-server-logging 'filesystem' --name <mark class="mark-name">todo-web-app</mark> --resource-group <mark class="mark-rg">todo-web-app-rg</mark>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code22')"></button>
+        <code id='code22'>
+            az webapp log tail --name <mark class="mark-name">todo-web-app</mark> --resource-group <mark class="mark-rg">todo-web-app-rg</mark>
+        </code>
+        <br>
+    </p>
+</li>
+<li>
+    <p>
+        Clean up resources. App rg and plan rg.
+    </p>
+    <aside>
+        <details>
+            <summary>details</summary>
+            <p><mark class="mark-rg">resource group</mark></p>
+            <p><mark class="mark-rg">resource group</mark></p>
+        </details>
+    </aside>
+    <p>
+        <button class='btn-copy' onclick="Copy('code23')"></button>
+        <code id='code23'>
+            az group delete --name <mark class="mark-rg">todo-web-app-rg</mark>
+        </code>
+        <br>
+        <button class='btn-copy' onclick="Copy('code24')"></button>
+        <code id='code24'>
+            az group delete --name <mark class="mark-rg">atari-monk-appservice-plans-rg</mark>
+        </code>
+        <br>
+    </p>
+</li>

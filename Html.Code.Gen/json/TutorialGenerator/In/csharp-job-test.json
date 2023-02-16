@@ -1,0 +1,55 @@
+[
+    {
+        "Title": "I made code example for each question.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "<a href='https://github.com/atari-monk/dotnet-examples/tree/main/Net.Examples/JobTest1'>Examples</a>"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "<a href='https://github.com/atari-monk/dotnet-examples/tree/main/Net.Examples.Cli'>Cli to run examples</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Describe ways to return more than one value from method.",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "Ref, Out, Struct, Class, Tuple, Array, List, Dictionary"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "<a href='https://github.com/atari-monk/dotnet-examples/tree/main/Net.Examples/JobTest1/Question1'>Examples in code</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Given <a href='https://github.com/atari-monk/dotnet-examples/blob/main/Net.Examples/JobTest1/Question2/ReplyQ2.cs'>this code</a>, what is output?",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "B1, A2. Method1 is overriden in ClassB ergo B1, Method2 is not overriden ergo A2."
+            }
+        ]
+    },
+    {
+        "Title": "Given <a href='https://github.com/atari-monk/dotnet-examples/blob/main/Net.Examples/JobTest1/Question3/ReplyQ3.cs'>this code</a>, what is output?",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "While has no termination condition due to double not beeing precise like int."
+            }
+        ]
+    },
+    {
+        "Title": "Given <a href='https://github.com/atari-monk/dotnet-examples/blob/main/Net.Examples/JobTest1/Question4/ReplyQ4.cs'>this code</a>, what is output?",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "Result is 7 due to scope of variable, method has only local var."
+            }
+        ]
+    }
+]

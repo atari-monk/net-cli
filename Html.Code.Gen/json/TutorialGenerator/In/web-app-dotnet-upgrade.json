@@ -1,0 +1,166 @@
+[
+    {
+        "Title": "Open Code powershell (shell set on folder Code)"
+    },
+    {
+        "Title": "Clone example repo. This web app is net6. Updgrade to net7",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "git clone https:\/\/github.com\/Azure-Samples\/msdocs-app-service-sqldb-dotnetcore.git"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "cd msdocs-app-service-sqldb-dotnetcore"
+            }
+        ]
+    },
+    {
+        "Title": "Create new repo on github. Named todo-web-app. Clone it."
+    },
+    {
+        "Title": "Check dotnet version. Install dotnet 7.0. <a href=\"https://dotnet.microsoft.com/en-us/download/dotnet/7.0\">Dotnet 7 download page</a>",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "dotnet --version"
+            }
+        ]
+    },
+    {
+        "Title": "Create net7, new mvc web app in VSCode. Test run it. Commit it.",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "dotnet new mvc -n todo-web-app"
+            }
+        ]
+    },
+    {
+        "Title": "Copy files of example app. Change namespace. Refactor names."
+    },
+    {
+        "Title": "Copy Todo model file."
+    },
+    {
+        "Title": "To raname project change folder and csproj name also change RootNamespace is csproj."
+    },
+    {
+        "Title": "Add sln file.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "dotnet new sln"
+            }
+        ]
+    },
+    {
+        "Title": "Add proj to sln.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "dotnet sln add .\\TodoWebApp\\"
+            }
+        ]
+    },
+    {
+        "Title": "Copy dbContext file and add Microsoft.EntityFrameworkCore.SqlServer PackageReference to csproj."
+    },
+    {
+        "Title": "Add contorller. Handle null warnings. (even temporary fix)"
+    },
+    {
+        "Title": "Map to new contorller as default in program.cs app.MapControllerRoute..."
+    },
+    {
+        "Title": "Copy views folder. Rename namespaces. Commit."
+    },
+    {
+        "Title": "Add ConnectionString named LocalDbConnection to appsettings.json. <a href=\"https://learn.microsoft.com/en-us/ef/core/miscellaneous/connection-strings\">Connection Strings</a>"
+    },
+    {
+        "Title": "Add ef core dbContext to program.cs web app setup. builder.Services.AddDbContext..."
+    },
+    {
+        "Title": "From a local terminal applay migrations. To create local db for tests. <a href=\"https://www.nuget.org/\">nuget</a>. ",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "cd TodoWebApp",
+                "CodeParams": [
+                    {
+                        "Desc": "you need to be in project with migrations folder"
+                    }
+                ]
+            },
+            {
+                "Nr": 8,
+                "CodeFormat": "dotnet tool install -g dotnet-ef",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "dotnet tool update -g dotnet-ef",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 10,
+                "CodeFormat": "dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.0",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed, dont use version for latest"
+                    }
+                ]
+            },
+            {
+                "Nr": 11,
+                "CodeFormat": "dotnet ef migrations add InitialCreate",
+                "CodeParams": [
+                    {
+                        "Desc": "if needed"
+                    }
+                ]
+            },
+            {
+                "Nr": 12,
+                "CodeFormat": "dotnet ef database update",
+                "CodeParams": [
+                    {
+                        "Desc": "run migrations on db"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Mismach in ef core nugets versions, for example Microsoft.EntityFrameworkCore.SqlServer and Microsoft.EntityFrameworkCore.Design<br>can give exceptions due to misiing implementations. Version=\"7.0.0\", Version=\"6.0.0\", did."
+    },
+    {
+        "Title": ".vscode json contain scripts to lunch app. If app was renamed. You need to edit theese files."
+    },
+    {
+        "Title": "Test web app localy with the browser in debug mode."
+    },
+    {
+        "Title": "Add azure diagnostics logging nuget. Add builder.Logging.AddAzureWebAppDiagnostics(); in program.cs. Build. Commit.",
+        "Codes": [
+            {
+                "Nr": 13,
+                "CodeFormat": "dotnet add package Microsoft.Extensions.Logging.AzureAppServices --version 7.0.0",
+                "CodeParams": [
+                    {
+                        "Desc": "dont use version for latest"
+                    }
+                ]
+            }
+        ]
+    }
+]

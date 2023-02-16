@@ -1,0 +1,17 @@
+EFCoreHelper
+DIHelper
+DotNetExtension
+DotNetTool
+CLIHelper
+ConfigWrapper
+ModelHelper
+CommandDotNetHelper
+CommandDotNetMDIHelper
+CommandDotNetIoCUnity
+CommandDotNetUnityHelper
+CLIReader
+DataToTable
+SerilogWrapper
+CRUDCommandHelper
+CLIWizardHelper
+CLIFramework

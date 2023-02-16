@@ -1,0 +1,338 @@
+[
+    {
+        "Title": "Interactive browser examples:"
+    },
+    {
+        "Title": "Sprites",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script1.js'>Animate rectangle</a>"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script2.js'>Load sprite sheet</a>"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script3.js'>Load sprite frame</a>"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script4.js'>Sprite animation</a>"
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script5.js'>Sprite animation with code upgr</a>"
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage1.html?script6.js'>Selecting other animation in sheet</a>"
+            },
+            {
+                "Nr": 7,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Sprite/spritePage2.html?script7.js'>Selecting all animations in sheet</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Parallax",
+        "Codes": [
+            {
+                "Nr": 8,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Parallax/parallaxPage1.html?script1.js'>Gap in background image</a>"
+            },
+            {
+                "Nr": 9,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Parallax/parallaxPage1.html?script2.js'>Fix the gap</a>"
+            },
+            {
+                "Nr": 10,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Parallax/parallaxPage1.html?script3.js'>Layers</a>"
+            },
+            {
+                "Nr": 11,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Parallax/parallaxPage2.html?script4.js'>Input speed</a>"
+            },
+            {
+                "Nr": 12,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Parallax/parallaxPage2.html?script5.js'>Refactored code</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Non-player character animations",
+        "Codes": [
+            {
+                "Nr": 13,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script1.js'>Rectangle prototype</a>"
+            },
+            {
+                "Nr": 14,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script2.js'>Class</a>"
+            },
+            {
+                "Nr": 15,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script3.js'>Hovering Bats animation</a>"
+            },
+            {
+                "Nr": 16,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script4.js'>Flying Bats animation</a>"
+            },
+            {
+                "Nr": 17,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script5.js'>Circular motion Ghost animation</a>"
+            },
+            {
+                "Nr": 18,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script6.js'>Vertical Sine animation</a>"
+            },
+            {
+                "Nr": 19,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script7.js'>Elipse animation</a>"
+            },
+            {
+                "Nr": 20,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script8.js'>Horizontall 8 animation</a>"
+            },
+            {
+                "Nr": 21,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/NPCAnim/npcAnim.html?script9.js'>Randomized motions animation</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Animation Trigger",
+        "Codes": [
+            {
+                "Nr": 22,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/AnimTrigger/animTrigger.html?script1.js'>Rectangle on mouse click</a>"
+            },
+            {
+                "Nr": 23,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/AnimTrigger/animTrigger.html?script2.js'>Animation on mouse click</a>"
+            },
+            {
+                "Nr": 24,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/AnimTrigger/animTrigger.html?script3.js'>Animation on mouse movement</a>"
+            },
+            {
+                "Nr": 25,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/AnimTrigger/animTrigger.html?script4.js'>Animation on mouse click with sound</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Point and click game",
+        "Codes": [
+            {
+                "Nr": 26,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage1.html?script1.js'>Prototype with rectangle</a>"
+            },
+            {
+                "Nr": 27,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage1.html?script2.js'>Prototype with rectangle group</a>"
+            },
+            {
+                "Nr": 28,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage1.html?script3.js'>Prototype with animation</a>"
+            },
+            {
+                "Nr": 29,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage1.html?script4.js'>Add Score</a>"
+            },
+            {
+                "Nr": 30,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage2.html?script5.js'>Detect with mouse click</a>"
+            },
+            {
+                "Nr": 31,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage2.html?script6.js'>Add explosion animation and sound</a>"
+            },
+            {
+                "Nr": 32,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game/gamePage2.html?script7.js'>Add particle effect</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Enemy animations",
+        "Codes": [
+            {
+                "Nr": 33,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script1.js'>Prototype with rectangle</a>"
+            },
+            {
+                "Nr": 34,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script2.js'>Prototype with rectangle group</a>"
+            },
+            {
+                "Nr": 35,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script3.js'>Ground creature animation</a>"
+            },
+            {
+                "Nr": 36,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script4.js'>Ghosts and ground creature animation</a>"
+            },
+            {
+                "Nr": 37,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script5.js'>Ghosts,ground creature and spider animation</a>"
+            },
+            {
+                "Nr": 38,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/EnemyClass/enemy.html?script6.js'>Some upgrade</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Scrolling Game",
+        "Codes": [
+            {
+                "Nr": 39,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script1.js'>Input</a>"
+            },
+            {
+                "Nr": 40,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script2.js'>Player prototype</a>"
+            },
+            {
+                "Nr": 41,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script3.js'>Background</a>"
+            },
+            {
+                "Nr": 42,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script4.js'>Enemy</a>"
+            },
+            {
+                "Nr": 43,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script5.js'>Sprites</a>"
+            },
+            {
+                "Nr": 44,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script6.js'>Remove enemies on screen exit</a>"
+            },
+            {
+                "Nr": 45,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script7.js'>Score</a>"
+            },
+            {
+                "Nr": 46,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame.html?script8.js'>Collision detection</a>"
+            },
+            {
+                "Nr": 47,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame2.html?script9.js'>Making it Phone friendly</a>"
+            },
+            {
+                "Nr": 48,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame2.html?script10.js'>Reset</a>"
+            },
+            {
+                "Nr": 49,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame2.html?script11.js'>Touch events for phone</a>"
+            },
+            {
+                "Nr": 50,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame3.html?script12.js'>Full screen option</a>"
+            },
+            {
+                "Nr": 51,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame3.html?script13.js'>Better/tweaking collision</a>"
+            },
+            {
+                "Nr": 52,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/ScrollingGame/scrollingGame3.html?script14.js'>Finished</a>"
+            }
+        ]
+    },
+    {
+        "Title": "State Design Pattern",
+        "Codes": [
+            {
+                "Nr": 53,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State1/script1.js'>Left Right state for player</a>"
+            },
+            {
+                "Nr": 54,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State2/script2.js'>Add sitting state</a>"
+            },
+            {
+                "Nr": 55,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State3/script3.js'>Add running state</a>"
+            },
+            {
+                "Nr": 56,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State4/script4.js'>Add jumping states</a>"
+            },
+            {
+                "Nr": 57,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State5/script5.js'>Add falling states</a>"
+            },
+            {
+                "Nr": 58,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State6/script6.js'>Add animations</a>"
+            },
+            {
+                "Nr": 59,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/StateDesignPattern/state.html?State7/script7.js'>Addjust frames speed</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Flame Dog Game",
+        "Codes": [
+            {
+                "Nr": 60,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d.html?Page1/script1.js'>Player prototype</a>"
+            },
+            {
+                "Nr": 61,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d.html?Page2/script2.js'>Player state</a>"
+            },
+            {
+                "Nr": 62,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d.html?Page3/script3.js'>Player animations</a>"
+            },
+            {
+                "Nr": 63,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d2.html?Page4/script4.js'>Background</a>"
+            },
+            {
+                "Nr": 64,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d3.html?Page5/script5.js'>Enemies</a>"
+            },
+            {
+                "Nr": 65,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d3.html?Page6/script6.js'>Collisions</a>"
+            },
+            {
+                "Nr": 66,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d3.html?Page7/script7.js'>Expand states</a>"
+            },
+            {
+                "Nr": 67,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d3.html?Page8/script8.js'>Particles</a>"
+            },
+            {
+                "Nr": 68,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d4.html?Page9/script9.js'>Flames</a>"
+            },
+            {
+                "Nr": 69,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d4.html?Page10/script10.js'>Diving and beeing hit animations</a>"
+            },
+            {
+                "Nr": 70,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d4.html?Page11/script11.js'>Add collision animation</a>"
+            },
+            {
+                "Nr": 71,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d4.html?Page12/script12.js'>Finished game</a>"
+            },
+            {
+                "Nr": 72,
+                "CodeFormat": "<a href='https://atari-monk.github.io/javascript-game-beginner/Game2d/game2d5.html?Page13/script13.js'>Add font, lives, floating messages</a>"
+            }
+        ]
+    }
+]

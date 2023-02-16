@@ -1,0 +1,99 @@
+[
+    {
+        "Title": "Setup project. In git bash or VSCode terminal.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "cd chat-server"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "npm init"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": "npm install socket.io"
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": "npm install express"
+            }
+        ]
+    },
+    {
+        "Title": "To .gitignore add (if not there)",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "node_modules"
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": ".vscode"
+            }
+        ]
+    },
+    {
+        "Title": "Add index.js with server code."
+    },
+    {
+        "Title": "Run it locally. Ctrl+C to kill it.",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "node index.js"
+            }
+        ]
+    },
+    {
+        "Title": "Add folder chat-client."
+    },
+    {
+        "Title": "Add index.html with chat client code."
+    },
+    {
+        "Title": "With live server extension, open two instances of chat client page."
+    },
+    {
+        "Title": "Open git bash in chat-server folder and run server.",
+        "Codes": [
+            {
+                "Nr": 8,
+                "CodeFormat": "node index.js"
+            }
+        ]
+    },
+    {
+        "Title": "Send message with one client. Check if it was recive by server and send to another clinet."
+    },
+    {
+        "Title": "Deploy to Azure."
+    },
+    {
+        "Title": "VSCode Azure extension. App Services. Create New Web App.",
+        "Codes": [
+            {
+                "Nr": 9,
+                "CodeFormat": "atari-monk-chat-server",
+                "CodeParams": [
+                    {
+                        "Desc": "example name",
+                        "CssClass": "mark-name"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Right click on chat-server, Deploy to Web App... ."
+    },
+    {
+        "Title": "Choose web app name and assign folder to it in popup."
+    },
+    {
+        "Title": "After server is deployed. Deploy client page with github pages."
+    },
+    {
+        "Title": "Test it."
+    }
+]

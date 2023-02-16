@@ -1,0 +1,63 @@
+[
+    {
+        "Title": "Created database named SqlTest. Backup to .bak file.",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "<a href='https://github.com/atari-monk/sql/blob/main/Task1/Create.sql'>Create db tables</a>"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "<a href='https://github.com/atari-monk/sql/blob/main/Task1/Insert.sql'>Insert data to db tables</a>"
+            }
+        ]
+    },
+    {
+        "Title": "Write queries:"
+    },
+    {
+        "Title": "Persons who have no address.",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "SELECT p.[Id],p.[Name],p.[Surname],p.[IdNumber],p.[DateOfBirth]<br>FROM [dbo].[Person] p<br>LEFT JOIN [dbo].[Address] a<br>ON p.Id = a.PersonId<br>WHERE a.Id IS NULL;"
+            }
+        ]
+    },
+    {
+        "Title": "Unique name of person who are born during july, august.",
+        "Codes": [
+            {
+                "Nr": 4,
+                "CodeFormat": "SELECT DISTINCT n, m FROM <br>(SELECT [Name] as n, MONTH([DateOfBirth]) as m<br>FROM [dbo].[Person])<br>AS data WHERE m IN ('7','8')"
+            }
+        ]
+    },
+    {
+        "Title": "Show one record with addres type witch is used the most and count of it used.",
+        "Codes": [
+            {
+                "Nr": 5,
+                "CodeFormat": "select Top(1)<br>at.Name,<br>count(*) as c<br>FROM Address a<br>INNER JOIN AddressType at<br>ON a.AddressTypeId = at.Id<br>GROUP BY at.Name<br>ORDER BY c DESC;"
+            }
+        ]
+    },
+    {
+        "Title": "Persons with adresses of more that one type.",
+        "Codes": [
+            {
+                "Nr": 6,
+                "CodeFormat": "select * FROM (<br>select<br>p.Name as Person<br>, at.Name as AddressType<br>, count(*) as c <br>FROM Address a<br>INNER JOIN AddressType at<br>ON a.AddressTypeId = at.Id<br>INNER JOIN Person p<br>ON a.PersonId = p.Id<br>GROUP BY p.Name, at.Name) selectA<br>WHERE c>1<br>ORDER BY selectA.c DESC;"
+            }
+        ]
+    },
+    {
+        "Title": "Average age of woman. (Truns out if digit before last one in IdNumber is even it's a woman)",
+        "Codes": [
+            {
+                "Nr": 7,
+                "CodeFormat": "SELECT AVG(age) FROM<br>(<br>SELECT Name<br>, Surname<br>, FLOOR(DATEDIFF(DAY, DateOfBirth, GETDATE()) / 365.25) AS age<br>, IdNumber<br>, SUBSTRING(IdNumber, 10, 1) AS Sex<br>FROM Person<br>) setectA<br>WHERE Sex % 2 = 0;"
+            }
+        ]
+    }
+]

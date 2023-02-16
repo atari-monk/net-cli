@@ -1,0 +1,33 @@
+[
+    {
+        "Title": "Get db name from azure portal Server name filed",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "atari-monk-az-sql-server.database.windows.net",
+                "CodeParams": [
+                    {
+                        "Desc": "example name from azure"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Get server login (stored from create cmd)",
+        "Codes": [
+            {
+                "Nr": 2,
+                "CodeFormat": "atari-monk-az",
+                "CodeParams": [
+                    {
+                        "Desc": "my login, used in tutorials"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Get server password (stored from create cmd)"
+    }
+]

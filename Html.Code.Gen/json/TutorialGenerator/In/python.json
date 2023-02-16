@@ -1,0 +1,118 @@
+[
+    {
+        "Title": "Cli",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "py --version"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "py .\\sample1.py"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": ""
+            }
+        ]
+    },
+    {
+        "Title": "Variables",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "Name convention: _ as space"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "Use \" and ' as string quotes"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": ""
+            }
+        ]
+    },
+    {
+        "Title": "Functions (code sequence, run on call)",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "Indentation (tab) denotes function<br>same level of indentation after function name is function body"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "def function_name():<br>tab line1<br>tab lineN"
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": ""
+            }
+        ]
+    },
+    {
+        "Title": "Misc",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "Comment #"
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 3,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 4,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 5,
+                "CodeFormat": ""
+            },
+            {
+                "Nr": 6,
+                "CodeFormat": ""
+            }
+        ]
+    }
+]

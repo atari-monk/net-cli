@@ -1,0 +1,69 @@
+[
+    {
+        "Title": "<a href=\"https://github.com/atari-monk?tab=repositories\">New repo page</a> or <a href=\"https://github.com/new\">New</a>"
+    },
+    {
+        "Title": "Set owner. Name convention is: repo-name"
+    },
+    {
+        "Title": "Description (optional)"
+    },
+    {
+        "Title": "Public or private."
+    },
+    {
+        "Title": "Add readme file checked."
+    },
+    {
+        "Title": "Add .gitignore. My default is VisualStudio."
+    },
+    {
+        "Title": "Licence. My default is Affero."
+    },
+    {
+        "Title": "Main as default branch."
+    },
+    {
+        "Title": "Repo can be renamed on this page <a href=\"https://github.com/atari-monk/todo-web-app/settings\">settings</a>"
+    },
+    {
+        "Title": "To Clone repo. Use Code btn on repos page to copy https url",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "https://github.com/atari-monk/repo",
+                "CodeParams": [
+                    {
+                        "Desc": "repo page url format",
+                        "CssClass": "mark-url"
+                    }
+                ]
+            },
+            {
+                "Nr": 2,
+                "CodeFormat": "https://github.com/atari-monk/repo.git",
+                "CodeParams": [
+                    {
+                        "Desc": "repo https url format",
+                        "CssClass": "mark-url"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Title": "Open git bash in my Code folder",
+        "Codes": [
+            {
+                "Nr": 3,
+                "CodeFormat": "git clone https://github.com/atari-monk/repo.git",
+                "CodeParams": [
+                    {
+                        "Desc": "git bash cmd to clone repo",
+                        "CssClass": "mark-cmd"
+                    }
+                ]
+            }
+        ]
+    }
+]

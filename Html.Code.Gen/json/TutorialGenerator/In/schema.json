@@ -1,0 +1,30 @@
+[
+    {
+        "Title": ""
+    },
+    {
+        "Title": "",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": ""
+            }
+        ]
+    },
+    {
+        "Title": "",
+        "Codes": [
+            {
+                "Nr": 1,
+                "CodeFormat": "",
+                "CodeParams": [
+                    {
+                        "Name": "",
+                        "Desc": "",
+                        "CssClass": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
