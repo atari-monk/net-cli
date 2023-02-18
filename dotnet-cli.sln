@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html.Code.Gen.Lib", "Html.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html.Code.Gen.Tests", "Html.Code.Gen.Tests\Html.Code.Gen.Tests.csproj", "{A7A7A9CE-25B5-49AF-8FA0-42B5D21D04EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foto.Sort", "Foto.Sort\Foto.Sort.csproj", "{DA83FE00-EE07-4825-AB54-88883DE2E49C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{A7A7A9CE-25B5-49AF-8FA0-42B5D21D04EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7A7A9CE-25B5-49AF-8FA0-42B5D21D04EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7A7A9CE-25B5-49AF-8FA0-42B5D21D04EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA83FE00-EE07-4825-AB54-88883DE2E49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA83FE00-EE07-4825-AB54-88883DE2E49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA83FE00-EE07-4825-AB54-88883DE2E49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA83FE00-EE07-4825-AB54-88883DE2E49C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
