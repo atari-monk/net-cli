@@ -9,7 +9,7 @@ ConsoleKeyInfo cki = new ConsoleKeyInfo();
 Console.TreatControlCAsInput = true;
 List<string> imgs = new();
 int current = 0;
-bool useWallpaper = true;
+bool useWallpaper = false;
 
 GetList();
 var img = GetImgPath();
