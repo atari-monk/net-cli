@@ -1,16 +1,24 @@
 ﻿using System.Diagnostics;
+using System.Text;
 
-//InterceptKeys.Start();
-const string root = @"F:\atari-monk\Image";
+const string root = @"C:\atari-monk\Image";
 Console.Clear();
 CloseImg();
 ConsoleKeyInfo cki = new ConsoleKeyInfo();
 Console.TreatControlCAsInput = true;
 List<string> imgs = new();
 int current = 0;
+StringBuilder sb = new();
+string menu;
+bool useWallpaper = false;
+
+SetMenu();
+
 GetList();
-//Task.Delay(250).ContinueWith(t => Focus2.FocusProcess("Foto.Sort"));
-OpenImg(GetImgPath());
+var img = GetImgPath();
+sb.AppendLine("Open");
+sb.AppendLine(img);
+OpenImg(img);
 
 
 string GetImgPath() {
@@ -22,8 +30,11 @@ try
 {
   do
   {
-    WriteMenu();
+    sb.Insert(0, menu);
+    Console.Write(sb.ToString());
     cki = Console.ReadKey();
+    sb.Clear();
+    Console.Clear();
     var key = cki.Key.ToString();
     if (key != "0") Console.WriteLine(key);
     HandleInput(key);
@@ -38,35 +49,45 @@ finally
 {
   CloseImg();
   Console.Clear();
-  //InterceptKeys.Stop();
 }
 
 
 void GetList()
 {
   imgs.Clear();
-  imgs.AddRange(Directory.GetFiles(@"F:\atari-monk\Image"));
+  imgs.AddRange(Directory.GetFiles(root));
 }
 
-void WriteMenu()
+void SetMenu()
 {
-  Console.WriteLine("Right arrow - next foto");
-  Console.WriteLine("Enter - delete foto");
-  Console.WriteLine("Space - sort foto");
-  Console.WriteLine("Escape - close app");
-  Console.WriteLine();
+  var sb = new StringBuilder();
+  sb.AppendLine("Right arrow - next foto");
+  sb.AppendLine("Enter - delete foto");
+  sb.AppendLine("Space - sort foto");
+  sb.AppendLine("Escape - close app");
+  sb.AppendLine();
+  menu = sb.ToString();
 }
 
 void OpenImg(string img)
 {
-  // if(string.IsNullOrWhiteSpace(img) || File.Exists(img) == false) return; 
-  // var start = new ProcessStartInfo();
-  // start.Arguments = img;
-  // start.FileName = @"C:\Program Files\IrfanView\i_view64.exe";
-  // start.WindowStyle = ProcessWindowStyle.Minimized;
-  // //start.CreateNoWindow = true;
-  // //Task.Delay(250).ContinueWith(t => Focus2.FocusProcess2("Foto.Sort"));
-  // Process.Start(start);
+  if(useWallpaper) SetWallpaper(img);
+  else OpenIrfan(img);
+}
+
+void OpenIrfan(string img)
+{
+  if(string.IsNullOrWhiteSpace(img) || File.Exists(img) == false) return; 
+  var start = new ProcessStartInfo();
+  start.Arguments = img + "/one" + "/fs";
+  start.FileName = @"C:\Program Files\IrfanView\i_view64.exe";
+  //Task.Delay(20).ContinueWith(t => Focus2.FocusProcess("Foto.Sort"));
+  Process.Start(start);
+  Mouse.DoMouseClick();
+}
+
+void SetWallpaper(string img)
+{
   Wallpaper.SetWallpaper(img);
 }
 
@@ -92,13 +113,13 @@ void MoveImg(string folder)
 void NextFoto() 
 {
   GetList();
-  Console.WriteLine("Next");
+  sb.AppendLine("Next");
   current++;
   CloseImg();
   if (current > imgs.Count - 1) current = 0;
   var imgPath = GetImgPath();
   OpenImg(imgPath);
-  Console.WriteLine(string.IsNullOrWhiteSpace(imgPath) ? "no image" : imgPath);
+  sb.AppendLine(string.IsNullOrWhiteSpace(imgPath) ? "no image" : imgPath);
 }
 
 void HandleInput(string key)
@@ -109,12 +130,12 @@ void HandleInput(string key)
       NextFoto();
       break;
     case "Enter":
-      Console.WriteLine("Trash");
+      sb.AppendLine("Trash");
       MoveImg("trash");
       NextFoto();
       break;
     case "Spacebar":
-      Console.WriteLine("Sort");
+      sb.AppendLine("Sort");
       MoveImg("sphere");
       NextFoto();
       break;

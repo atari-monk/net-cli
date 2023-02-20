@@ -1,0 +1,5 @@
+1-2. Set test.
+3. Log key maping to console.
+4. Write basic info and input to console.
+5. Open image in some editor, switch to next using keyboard.
+6-7. Move images to folders based on keyboard input.

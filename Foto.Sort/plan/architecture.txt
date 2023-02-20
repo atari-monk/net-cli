@@ -1,0 +1,4 @@
+1. Cli (console line interface) app
+2. Methods in main Program file.
+3. Some classes for tooling.
+4. This version is a draft, to test snipets of code that can be used in MVP (minimum viable product).

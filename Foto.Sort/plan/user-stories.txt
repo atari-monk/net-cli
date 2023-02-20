@@ -1,0 +1,7 @@
+1. User has folder named test with 3 test images.
+2. User has folder named trash and sort, in the test folder.
+3. User is able to see input instructions.
+4. User is able to see basic log of his input and basic info.
+5. User is able to see image and switch to next one.
+6. User is able to move image to sort folder.
+7. User is able to move image to trash folder. 
