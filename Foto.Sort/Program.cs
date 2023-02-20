@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-const string Root = @"C:\atari-monk\Code\net-cli\Foto.Sort\test";
+const string Root = @"C:\atari-monk\test";
 const string Sort = "sort";
 const string Trash = "trash";
 Console.Clear();
@@ -9,7 +9,7 @@ ConsoleKeyInfo cki = new ConsoleKeyInfo();
 Console.TreatControlCAsInput = true;
 List<string> imgs = new();
 int current = 0;
-bool useWallpaper = false;
+bool useWallpaper = true;
 
 GetList();
 var img = GetImgPath();
@@ -18,7 +18,6 @@ Console.WriteLine();
 Console.WriteLine("Open");
 Console.WriteLine(img);
 OpenImg(img);
-//Console.Write(sb.ToString());
 
 string GetImgPath() {
   if(imgs.Count == 0) return string.Empty;
@@ -71,7 +70,8 @@ void OpenImg(string img)
 
 void OpenIrfan(string img)
 {
-  if(string.IsNullOrWhiteSpace(img) || File.Exists(img) == false) return; 
+  if(string.IsNullOrWhiteSpace(img) || File.Exists(img) == false) return;
+  CloseImg();
   var start = new ProcessStartInfo();
   start.Arguments = img + "/one" + "/fs";
   start.FileName = @"C:\Program Files\IrfanView\i_view64.exe";
@@ -108,7 +108,6 @@ void NextFoto()
   GetList();
   Console.WriteLine("Next");
   current++;
-  CloseImg();
   if (current > imgs.Count - 1) current = 0;
   var imgPath = GetImgPath();
   Console.WriteLine(string.IsNullOrWhiteSpace(imgPath) ? "no image" : imgPath);

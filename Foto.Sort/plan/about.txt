@@ -1,0 +1,5 @@
+This is a draft, to test snipets of code that can be used in MVP (minimum viable product).
+Every app should have proof of concept phase that helps to determine how idea really works.
+This phase should be fast testing of snipets of code without any architecture or refactoring,
+to minimize time needed to answar if idea has any potential.
+Even if app has next versions it's probably usefull to keep such drafts.  
