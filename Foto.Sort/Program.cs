@@ -56,7 +56,7 @@ void WriteMenu()
 {
   Console.WriteLine("H - help");
   Console.WriteLine("Right arrow - next foto");
-  Console.WriteLine("Enter - delete foto");
+  Console.WriteLine("Down arrow - delete foto");
   Console.WriteLine("Space - sort foto");
   Console.WriteLine("Escape - close app");
   Console.WriteLine();
@@ -124,7 +124,7 @@ void HandleInput(string key)
     case "RightArrow":
       NextFoto();
       break;
-    case "Enter":
+    case "DownArrow":
       Console.WriteLine($"Trash {GetImgPath()}");
       MoveImg(Trash);
       NextFoto();
